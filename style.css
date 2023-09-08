@@ -14,7 +14,7 @@ body p{
 }
 
 body{
-    background-image: url(Assets/header\ background.webp);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -158,24 +158,74 @@ body{
     padding: 2rem 0rem 1rem 0rem;
 
 }
-.logos, .logos-1, .employees-images{
+
+@keyframes slidesss {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-100%);
+}
+
+}
+@keyframes slidess {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+    }
+.employees-images{
     overflow: hidden;
     padding: 10px 0px;
     white-space: nowrap;
     scroll-behavior: smooth;
 }
+.logos, .logos-1{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0px;
+    scroll-behavior: smooth;
+}
+.logos{
+    margin-top: 4rem;
+}
+.logos-slide{
+    display: inline-block;
+    animation: 30s slidesss infinite linear;
+}
+.logos-slide-1{
+    display: inline-block;
+    animation: 30s slidess infinite linear;
+}
+.logos-slide img{
+    height: 80px;
+    margin: 0 40px;
+}
+.logos-slide-1 img{
+    height: 80px;
+    margin: 0 40px;
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos-1:hover .logos-slide-1{
+    animation-play-state: paused;
+}
 
-.logos-slide, .employees-slide-images{
+.employees-slide-images{
     display: inline-block;
     animation: 16s slide infinite linear;
     scroll-behavior: smooth;
 }
-.logos-slide-1, .employees-slide-images-2{
+.employees-slide-images-2{
     display: inline-block;
     animation: 16s slidess infinite linear;
     scroll-behavior: smooth;
 }
-.races-images, .main-employees-images{
+.main-employees-images{
     margin: 0 40px;
 
 }
@@ -296,7 +346,8 @@ body{
     transition: transform 0.8s;
 }
 .individual-employee:hover{
-    transform:  rotateY(180deg) rotate(45deg);
+    transform:  rotateY(360deg);
+   
 }
 .individual{
     width: 10rem; 
@@ -446,6 +497,9 @@ body{
     height: 100vh;
     width: 100%;
     pointer-events: none;
+  }
+  .box:hover .innervideos{
+    animation-play-state: paused;
   }
 .carouselclass::before{
     content: ' ';
