@@ -452,3 +452,48 @@ body{
     background-image: url(Assets/client-back.png);
     z-index: 8;
 }
+
+
+.delayed-section {
+    position: absolute;
+    /* width: 30vw;
+    height: 38.87vw; */
+    transform: rotate(-8deg);
+  }
+  .delayed-section .inner-container {
+    will-change: transform;
+  }
+  .delayed-section img {
+    max-width: 14%;
+    will-change: transform;
+  }
+  
+  #del1 {
+    /* top: 101vh; */
+    left: 16vw;
+  }
+  #del2 {
+    /* top: 110vh; */
+    left: 32vw;
+  }
+  #del3 {
+    /* top: 120vh; */
+    left: 0vw;
+  }
+  #del4 {
+    /* top: 101vh; */
+    left: 48vw;
+  }
+  #del5 {
+    /* top: 110vh; */
+    left: 64vw;
+  }
+  #del6 {
+    /* top: 120vh; */
+    left: 80vw;
+  }
+  #del7 {
+    /* top: 120vh; */
+    left: 96vw;
+  }
+  
