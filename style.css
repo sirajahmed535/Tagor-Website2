@@ -9,6 +9,9 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
 }
+body p{
+    font-weight: 300;
+}
 
 body{
     background-image: url(Assets/header\ background.webp);
@@ -510,7 +513,7 @@ body{
   .become-client-row{
     /* background-image: linear-gradient(to right#281273, #18084E); */
     background-image: linear-gradient(to right, #281273 , #190723);
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 20px;
     color: white;
     font-family: 'poppins';
@@ -531,6 +534,27 @@ body{
 @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+#client-down-class img{
+    animation: taadaa 2s infinite;
+}
+@keyframes taadaa {
+    0% {
+        opacity: 0;
+      }
+    
+      25% {
+        opacity: 0.3;
+      }
+      50%{
+        opacity: 0.5;
+      }
+      75%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 1;
+      }
 }
 
   
