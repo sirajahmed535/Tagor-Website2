@@ -530,17 +530,21 @@ to {
     will-change: transform;
   }
   .delayed-section img {
-    max-width: 14%;
+    max-width: 20%;
     will-change: transform;
   }
 .txt-img-class{
-    max-width: 31% !important;
+    max-width: 37% !important;
     will-change: transform;
 }
+/* .txt-img-class-1{
+    max-width: 18% !important;
+    will-change: transform;
+} */
   
   #del1 {
     /* top: 101vh; */
-    left: 16vw;
+    left: 12vw;
   }
   #del2 {
     /* top: 110vh; */
@@ -548,7 +552,7 @@ to {
   }
   #del3 {
     /* top: 120vh; */
-    left: 0vw;
+    left: -10vw;
   }
   #del4 {
     /* top: 101vh; */
