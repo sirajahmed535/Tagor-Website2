@@ -534,7 +534,19 @@ to {
     will-change: transform;
   }
 .txt-img-class{
-    max-width: 37% !important;
+    max-width: 38% !important;
+    will-change: transform;
+}
+.txt-img-class-1{
+    max-width: 16% !important;
+    will-change: transform;
+}
+.txt-img-class-2{
+    max-width: 16% !important;
+    will-change: transform;
+}
+.txt-img-class-3{
+    max-width: 16% !important;
     will-change: transform;
 }
 /* .txt-img-class-1{
@@ -548,11 +560,13 @@ to {
   }
   #del2 {
     /* top: 110vh; */
-    left: 31.5vw;
+    left: 32vw;
   }
   #del3 {
     /* top: 120vh; */
-    left: -10vw;
+
+    left: -6vw;
+    
   }
   #del4 {
     /* top: 101vh; */
@@ -560,11 +574,11 @@ to {
   }
   #del5 {
     /* top: 110vh; */
-    left: 64vw;
+    left: 71vw;
   }
   #del6 {
     /* top: 120vh; */
-    left: 80vw;
+    left: 88vw;
   }
   #del7 {
     /* top: 120vh; */
