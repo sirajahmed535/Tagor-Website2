@@ -506,7 +506,7 @@ to {
     margin-left: 2rem;
 }
 .shopify-class{
-    background: linear-gradient(-45deg, rgba(116,70,172,0.2), rgba(0,0,0, 0.2), rgba(37,85,131,0.2));
+    background: linear-gradient(-45deg, rgba(116,70,172,0.5), rgba(0,0,0, 0.5), rgba(37,85,131,0.6));
     padding: 1rem 2rem;
     border-radius: 1rem;
     filter: drop-shadow(4px 4px 8px #000000);
