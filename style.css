@@ -373,11 +373,120 @@ to {
     height:100%;
     object-fit: cover;
 }
-.services-row, .process-row{
+.services-row, .process-row, .process-row-1, .process-row-2{
     font-family: 'poppins';
     color: white;
     font-weight: bold;
     text-align: center;
+}
+.services-row{
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    scale: 1.6;
+    opacity: 0.3;
+}
+.services-row::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 380px;
+    top: 40%;
+}
+.services-row::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 820px;
+    top: 40%;
+}
+.process-row{
+    position: relative;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    scale: 1.6;
+    opacity: 0.3;
+}
+.inner-our-process-2, .inner-process-row-2{
+    color: white;
+    text-align: center;
+    font-family: 'poppins';
+    margin: inherit;
+}
+.process-row::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 380px;
+    top: 40%;
+}
+.process-row::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 820px;
+    top: 40%;
+}
+.process-row-1{
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    scale: 1.6;
+    opacity: 0.3;
+}
+.inner-dashboard{
+    margin-bottom: 3rem;
+}
+.process-row-1::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 350px;
+    top: 20%;
+}
+.process-row-1::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 850px;
+    top: 20%;
+}
+.process-row-2{
+    position: relative;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    scale: 1.6;
+    opacity: 0.3;
+}
+.process-row-2::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 320px;
+    top: 40%;
+}
+.process-row-2::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 880px;
+    top: 40%;
 }
 .view-all-btn{
     text-align: end;

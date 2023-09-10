@@ -146,4 +146,63 @@ delSections.forEach(section => {
 });
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".services-row", {
+  scale: 0.8,
+  opacity: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".services-row",
+    start: "top 70%",
+    end: "bottom 20%",
+    toggleActions: "play pause resume reverse",
+    markers:false
+  }  
+})
+
+// gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".process-row", {
+  scale: 0.8,
+  opacity: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".process-row",
+    start: "top 70%",
+    end: "bottom 20%",
+    toggleActions: "play pause resume reverse",
+    markers:false
+  }  
+})
+
+// gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".process-row-1", {
+  scale: 0.8,
+  opacity: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".process-row-1",
+    start: "top 70%",
+    end: "bottom 20%",
+    toggleActions: "play pause resume reverse",
+    markers:false
+  }  
+})
+
+gsap.to(".process-row-2", {
+  scale: 0.8,
+  opacity: 1,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".process-row-2",
+    start: "top 70%",
+    end: "bottom 20%",
+    toggleActions: "play pause resume reverse",
+    markers:false
+  }  
+})
+
+
 
