@@ -640,14 +640,19 @@ to {
   }
   .delayed-section img {
     max-width: 20%;
+    max-height: 300vh;
     will-change: transform;
   }
+.txt-img-class-one{
+    max-width: 24% !important;
+    will-change: transform;
+}
 .txt-img-class{
-    max-width: 38% !important;
+    max-width: 46% !important;
     will-change: transform;
 }
 .txt-img-class-1{
-    max-width: 16% !important;
+    max-width: 20% !important;
     will-change: transform;
 }
 .txt-img-class-2{
@@ -665,11 +670,11 @@ to {
   
   #del1 {
     /* top: 101vh; */
-    left: 12vw;
+    left: 0vw;
   }
   #del2 {
     /* top: 110vh; */
-    left: 32vw;
+    left: 29vw;
   }
   #del3 {
     /* top: 120vh; */
@@ -683,7 +688,7 @@ to {
   }
   #del5 {
     /* top: 110vh; */
-    left: 71vw;
+    left: 80vw;
   }
   #del6 {
     /* top: 120vh; */
@@ -763,12 +768,26 @@ to {
     border-radius: 5rem 0rem 0rem 5rem;
     border: 1px solid transparent;
     padding: 2rem;
+    position: relative;
 }
+/* .subscribe-field::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background: black;
+    left: 320px;
+    top: 40%;
+} */
 .subscribe-btn{
     background-color: black;
     color: white;
     border-radius: 0rem 2rem 2rem 0rem;
     padding: 1.25rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .footer-row{
