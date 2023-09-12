@@ -61,6 +61,11 @@ body p{
     padding: 1rem;
     border-radius: 3rem;
 }
+.menu-bar{
+    font-size: 30px;
+    color: white;
+    display: none;
+}
 .btn-lg{
     border-radius: 2rem !important;
     background-color: #FBC108 !important;
@@ -809,5 +814,157 @@ label{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px){
+    .heading-class > .main-heading-txt{
+        font-size: 3rem;
+    }
+    .services-row::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 300px;
+        top: 40%;
+    }
+    .services-row::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 720px;
+        top: 40%;
+    }
+    .process-row::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 300px;
+        top: 40%;
+    }
+    .process-row::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 720px;
+        top: 40%;
+    }
+    .process-row-1::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 270px;
+        top: 40%;
+    }
+    .process-row-1::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 750px;
+        top: 40%;
+    }
+    .process-row-2::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 230px;
+        top: 40%;
+    }
+    .process-row-2::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 790px;
+        top: 40%;
+    }
+}
+@media (min-width: 1240px) and (max-width: 1280px){
+    .services-row::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 300px;
+        top: 40%;
+    }
+    .services-row::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 720px;
+        top: 40%;
+    }
+    .process-row::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 300px;
+        top: 40%;
+    }
+    .process-row::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 720px;
+        top: 40%;
+    }
+    .process-row-1::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 270px;
+        top: 40%;
+    }
+    .process-row-1::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 750px;
+        top: 40%;
+    }
+    .process-row-2::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 230px;
+        top: 40%;
+    }
+    .process-row-2::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 790px;
+        top: 40%;
     }
 }
