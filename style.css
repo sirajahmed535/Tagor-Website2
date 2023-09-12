@@ -357,8 +357,7 @@ to {
 }
 .process-row-2{
     position: relative;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
+    margin-bottom: 8rem;
     scale: 1.6;
     opacity: 0.3;
 }
@@ -512,13 +511,13 @@ to {
   .box:hover .innervideos{
     animation-play-state: paused;
   }
-.carouselclass::before{
+/* .carouselclass::before{
     content: ' ';
    
     top: 0; left: 0; bottom: 0; right: 0;
     background-image: url(Assets/client-back.png);
     z-index: 8;
-}
+} */
 .delayed-section {
     position: absolute;
     /* width: 30vw;
@@ -714,4 +713,101 @@ label{
 .footer-container{
     margin-top: 8rem;
 }
+
+/*3d client review slider*/
+.d-review-slider {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
   
+  .carousel-3d-class {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    animation: 30s clientsss linear infinite;
+  }
+  .carousel-3d-class:hover{
+    animation-play-state: paused;
+  }
+  @keyframes clientsss{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg); 
+    }
+  }
+  .item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 150%;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 1;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgb(255 255 255 / 0.5);;
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+    
+  }
+  
+  .b {
+    transform: rotateY(60deg) translateZ(250px);
+    
+  }
+  
+  .c {
+    transform: rotateY(120deg) translateZ(250px);
+    
+  }
+  
+  .d {
+    transform: rotateY(180deg) translateZ(250px);
+    
+  }
+  
+  .e {
+    transform: rotateY(240deg) translateZ(250px);
+    
+  }
+   
+  .f {
+    transform: rotateY(300deg) translateZ(250px);
+    
+  }
+ 
+  /* .carousel-3d-class::before{
+    content: ' ';
+   
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url(Assets/client-back.png);
+    z-index: 8;
+} */
+.circle-txt{
+    position: absolute;
+    width: 80%;
+    left: 40rem;
+    top: 26rem;
+    opacity: 0.1;
+    animation: 8s rotate infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
