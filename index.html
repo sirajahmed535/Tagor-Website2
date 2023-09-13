@@ -17,7 +17,7 @@
     <title>CleverConvertors</title>
 </head>
 <body>
-  <nav class="navbar" style="display: flex; justify-content: center;">
+  <!-- <nav class="navbar" style="display: flex; justify-content: center;">
     
       <div class="nvbr-row">
         <div>
@@ -29,7 +29,6 @@
         </div>
         <div class="nav-linksss">
           <ul class="nav-itemss">
-            <!-- <li><a href="#" class="bar-link">Home</a></li> -->
             <li><a href="#" class="bar-link btn btn-lg active" aria-pressed="true">Home</a></li>
             <li><a href="services.html" class="bar-link">Services</a></li>
             <li><a href="about.html" class="bar-link">About</a></li>
@@ -45,26 +44,34 @@
         <a href="#" class="menu-bar">
           <i class="fa-solid fa-bars"></i>
         </a>
-        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-        </ul> -->
-
-
-
-
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
       </div>
-   
-  </nav>
+  </nav> -->
+  
+  <nav class="navbar">
+    <div class="navbar-container">
+      <img src="Assets/Logo.png">
+      <img src="Assets/nav-horizontal line.png" class="line-11">
+
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="menu" id="menu" >
+            <li><a href="#" style="color: black;">Home</a></li>
+            <li style="background-color: transparent; color: white;"><a href="#">Services</a></li>
+            <li style="background-color: transparent; color: white;"><a href="#">About</a></li>
+            <li style="background-color: transparent; color: white;"><a href="#">Courses</a></li>
+        </ul>
+        <img src="Assets/nav-horizontal line.png" class="line-22">
+        <img src="Assets/phone-button.png">
+    </div>
+</nav>
 
   <header class="main-header-section" id="header-id">
     <div class="container header-section">
-      <div class="row header-main-row">
+      <div class="row header-main-row" style="display: flex;">
         <div class="col-6 heading-class" style="padding-top: 5rem; padding-left: 3rem;">
           <h1 class="main-heading-txt">
             YOU'VE TRIED THE <span style="color: #FBC108;">REST</span>, NOW WORK WITH THE <span style="color: #FBC108;">BEST!</span>
@@ -83,7 +90,7 @@
         <div class="col-6 anime-lottie">
           <dotlottie-player autoplay loop mode="normal"
       src="lotties-files/header-new-anima.lottie"
-      style="width: 800px; margin: auto; padding-right: 2rem"></dotlottie-player>
+      style="width: 800px; margin: auto; padding-right: 2rem" class="anime-lottie-inner"></dotlottie-player>
         </div>
       </div>
 
@@ -550,8 +557,14 @@
         <form>
           <label>
         <!-- <input type="email" class="input-email" id="input-id" placeholder="Enter your email"> -->
-        <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="subscribe-field" style="background-color: white; color: black; border: none;">
-        <button type="button" class="btn subscribe-btn " style="font-family: 'Teko'; height: 7vh; background-color: #FBC108; color: black;">Send</button>
+        <!-- <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="subscribe-field" style="background-color: white; color: black; border: none;">
+        <button type="button" class="btn subscribe-btn">Send</button> -->
+        <div class="input-group mb-3" style="width: 190% !important;">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" style="padding: 1rem !important; border-radius: 3rem !important; border: 1px solid transparent !important;">
+          <div class="input-group-append" style="margin-left: -6rem; padding-top: 0px;">
+            <button class="btn btn-outline-secondary" type="button" style="border-radius: 2rem; background-color: #FBC108; border: 4px solid white; color: black; padding: 1rem 2rem;">Send</button>
+          </div>
+        </div>
       </label>
       </form>
       </div>
@@ -573,9 +586,13 @@
       <div class="col-md-8 insights">
         <h2>Our Insights, <span>Your <br> Advantage.</span> Subscribe! </h2>
         <form>
-          <label>
-            <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="subscribe-field-1" >
-            <button type="button" class="btn subscribe-btn-1 " style="font-family: 'Teko'; height: 7vh; background-color: #FBC108; color: black;">Send</button>
+          <label style="width: 60% !important;">
+            <div class="input-group mb-3" style="width: 100% !important;">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" style="padding: 1rem !important; border-radius: 3rem !important; border: 1px solid white !important; background-color: transparent !important;">
+              <div class="input-group-append" style="margin-left: -6rem; padding-top: 0px;">
+                <button class="btn btn-outline-secondary" type="button" style="border-radius: 2rem; background-color: #FBC108; color: black; padding: 0.8rem 2rem; margin-top: 2px; margin-left: -9px;">Send</button>
+              </div>
+            </div>
           </label>
         </form>
       </div>

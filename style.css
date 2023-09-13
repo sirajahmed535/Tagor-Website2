@@ -14,7 +14,42 @@ body{
 body p{
     font-weight: 300;
 }
-.navbar>.container{
+.navbar{
+    background-color: transparent !important;
+    padding: 20px 20px !important;
+}
+.menu{
+    border: 2px solid white;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    margin: 0 !important;
+    font-family: 'Teko';
+}
+.menu li{
+    margin: 0px 10px !important;
+    background-color: #FBC108;
+    border-radius: 20px !important;
+    height: 30px;
+    padding: 3px;
+}
+.menu li:hover{
+    background-color: #FBC108 !important;
+    color: black !important;
+    transition: 1s;
+
+}
+.menu li a{
+    padding: 20px !important;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: black;
+    text-decoration: none;
+}
+.line-11, .line-22{
+    width: 20%;
+}
+/* .navbar>.container{
     display: flex !important;
     justify-content: space-around !important;
 }
@@ -65,7 +100,7 @@ body p{
     font-size: 30px;
     color: white;
     display: none;
-}
+} */
 .btn-lg{
     border-radius: 2rem !important;
     background-color: #FBC108 !important;
@@ -100,7 +135,8 @@ body p{
 }
 .anime-lottie{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-left: 4rem;
 }
 .btn-lg2{
     border-radius: 2rem !important;
@@ -656,7 +692,7 @@ label{
     right: 0;
     bottom: 0;
     border: none;
-    padding: 15px;
+    padding: 9px;
     border-radius: 40px;
     width: 100px;
     margin-top: 3px !important;
@@ -669,18 +705,18 @@ label{
     border-radius: 30px;
     background-color: transparent;
 }
-.subscribe-btn{
+/* .subscribe-btn{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     border: none;
-    padding: 15px;
+    padding: 9px;
     border-radius: 40px;
     width: 100px;
     margin-top: 2px !important;
     margin-right: 2px !important;
-}
+} */
 .footer-row{
     display: flex;
     justify-content: space-around;
@@ -966,5 +1002,189 @@ label{
         background: white;
         left: 790px;
         top: 40%;
+    }
+}
+
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    padding: 20px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #00bcd4;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Media query for responsive design */
+/* @media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active .bar {
+        background-color: #00bcd4;
+    }
+} */
+@media (max-width: 991px){
+    .line-11, .line-22{
+        width: 16% !important;
+    }
+    .anime-lottie-inner{
+        width: 700px !important;
+    }
+    .main-heading-txt{
+        font-size: 2.2rem !important;
+    }
+    .heading-class{
+        padding-top: 2rem !important;
+        padding-left: 1rem !important;
+    }
+    .inner-txt-div h2{
+        font-size: 24px !important;
+    }
+    .services-row::after{
+        content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 500px;
+    top: 40%;
+    }
+    .services-row::before{
+        content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 100px;
+    top: 40%;
+    }
+    #process-section-cl{
+        margin-top: 60rem !important;
+    }
+    .process-row::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 100px;
+        top: 40%;
+}
+.process-row::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 500px;
+    top: 40%;
+}
+.process-row-1::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 80px;
+    top: 20%;
+}
+.process-row-1::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 530px;
+    top: 20%;
+}
+.process-row-2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: white;
+    left: 50px;
+    top: 40%;
+}
+    .process-row-2::after {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 1px;
+        background: white;
+        left: 550px;
+        top: 40%;
+}
+    .from-voice{
+        font-size: 250%;
+    }
+    .input-group{
+        width: 120% !important;
     }
 }
