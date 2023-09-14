@@ -319,6 +319,10 @@ to {
     scale: 1.6;
     opacity: 0.3;
 }
+.main-shopify-div{
+    display: flex;
+    justify-content: space-between;
+}
 .services-row::before{
     content: "";
     position: absolute;
@@ -1044,10 +1048,6 @@ label{
     transition: color 0.3s ease;
 }
 
-.menu a:hover {
-    color: #00bcd4;
-}
-
 /* Mobile menu styles */
 .menu-toggle {
     display: none;
@@ -1064,31 +1064,6 @@ label{
 }
 
 /* Media query for responsive design */
-/* @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-        z-index: 1;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-toggle.active .bar {
-        background-color: #00bcd4;
-    }
-} */
 @media (max-width: 991px){
     .line-11, .line-22{
         width: 16% !important;
@@ -1182,9 +1157,342 @@ label{
         top: 40%;
 }
     .from-voice{
-        font-size: 250%;
+        font-size: 250% !important;
+    }
+    .become-client-inner-2{
+        padding-left: 0rem !important;
     }
     .input-group{
         width: 120% !important;
     }
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background-image: linear-gradient(to top, #391141, #000000);
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        border-radius: 0px;
+        border: none;
+        align-items: center;
+    }
+    .nav-img{
+        z-index: 2 !important;
+    }
+    .menu-toggle{
+        z-index: 2 !important;
+    }
+    .menu li{
+        width: 100px;
+        margin: 30px 10px !important;
+    }
+    .menu li:hover{
+        background-color: #FBC108 !important;
+        color: #000000 !important;
+    }
+    .menu > .cross-icon{
+        background-color: transparent;
+        margin-left: 40rem !important;
+    }
+
+    .menu.active {
+        display: flex;
+        padding-top: 7rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .anime-lottie-inner{
+        width: 600px !important; 
+    }
+    .inner-txt-div h2 {
+        font-size: 18px !important;
+    }
+    .inner-txt-div p{
+        font-size: 0.8rem !important;
+    }
+    .shopify-class{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 568px){
+    .heading-class{
+        width: 100%;
+        text-align: center;
+    }
+    .social-media-icons{
+        width: 100%;
+    }
+    .anime-lottie{
+        width: 100%;
+        padding-left: 0rem;
+    }
+    .inner-txt-div{
+        width: 60% !important;
+    }
+    .inner-txt-div h2{
+        font-size: 24px !important;
+    }
+    .services-row::after{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 400px;
+    top: 40%;
+    }
+    .services-row::before{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 120px;
+    top: 40%;
+    }
+    .serv-res{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .serv-btn{
+        text-align: center; 
+    }
+    .shopify-class{
+        width: 90% !important;
+    }
+    .main-shopify-div{
+        padding-left: 3rem;
+        text-align: center;
+    }
+    .process-row::after{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 400px;
+    top: 40%;
+    }
+    .process-row::before{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 120px;
+    top: 40%;
+    }
+    .process-row-1::before{
+        content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: white;
+    left: 110px;
+    top: 20%;
+    }
+    .process-row-1::after{
+        content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: white;
+    left: 420px;
+    top: 20%;
+    }
+    .become-client-row{
+        margin: 2rem;
+    }
+    .become-client-inner-1, .become-client-inner-2{
+        padding-left: 0rem !important;
+        text-align: center;
+    }
+    .process-row-2::before{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 70px;
+    top: 40%;
+    }
+    .process-row-2::after{
+        content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background: white;
+    left: 450px;
+    top: 40%;
+    }
+    .carousel-3d-class{
+        width: 70% !important;
+        height: 70% !important;
+    } 
+    #client-down-class{
+        padding-top: 6rem;
+    }
+    .booking-section{
+        margin: 2rem;
+    }
+    .invoice-class{
+        text-align: center;
+    }
+    .input-group{
+    margin-right: 6rem;
+    margin-left: -2rem;
+    }
+   .footer-logo-class{
+    text-align: center;
+    margin-bottom: 2rem;
+   }
+   .insights{
+    text-align: center;
+   }
+   .footer-logo-class img{
+    width: 24%;
+   }
+   .horizontal-line-footer{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+   }
+   .quick-links{
+    font-size: 12px;
+   } 
+}
+@media (max-width: 376px){
+  body{
+    margin-left: 3rem;
+    width: 100%;
+  }
+  .inner-txt-div{
+    width: 100% !important;
+    padding-right: 4rem !important;
+    text-align: center;
+  }
+  .services-row::before{
+    content: "";
+position: absolute;
+width: 20px;
+height: 1px;
+background: white;
+left: 60px;
+top: 40%;
+}
+.services-row::after{
+    content: "";
+position: absolute;
+width: 20px;
+height: 1px;
+background: white;
+left: 290px;
+top: 40%;
+}
+.main-shopify-div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.txt-img-class-one{
+    max-width: 34% !important;
+}
+#del2{
+    position: absolute;
+    left: 34vw;
+}
+.txt-img-class{
+    max-width: 61% !important;
+}
+#del5{
+    position: absolute;
+    left: 96vw;
+}
+.txt-img-class-1{
+    max-width: 30% !important;
+}
+#process-section-cl{
+    margin-top: 36rem !important;
+}
+.process-row::before{
+    content: "";
+position: absolute;
+width: 20px;
+height: 1px;
+background: white;
+left: 64px;
+top: 40%;
+}
+.process-row::after{
+    content: "";
+position: absolute;
+width: 20px;
+height: 1px;
+background: white;
+left: 290px;
+top: 40%;
+}
+.process-row-1::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background: white;
+    left: 110px;
+    top: 20%;
+}
+.process-row-1::after{
+    content: "";
+position: absolute;
+width: 40px;
+height: 1px;
+background: white;
+left: 224px;
+top: 20%;
+}
+.process-row-1{
+    margin-bottom: 0rem;
+}
+.become-client-row{
+    margin: 0rem;
+}
+.process-row-2::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 25px;
+    top: 40%;
+}
+.process-row-2::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 330px;
+    top: 40%;
+}
+#client-down-class{
+    padding-top: 7rem;
+}
+.booking-section {
+     margin: 0rem;
+}
+.footer-input-cl{
+    width: 100% !important;
+}
+.input-group{
+    margin-left: 0rem !important;
+}
 }

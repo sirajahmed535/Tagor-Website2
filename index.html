@@ -49,23 +49,25 @@
   
   <nav class="navbar">
     <div class="navbar-container">
-      <img src="Assets/Logo.png">
+      <img src="Assets/Logo.png" class="nav-img">
       <img src="Assets/nav-horizontal line.png" class="line-11">
 
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
-            <div class="bar"></div>
+            <div class="bar bar-2"></div>
             <div class="bar"></div>
         </div>
 
         <ul class="menu" id="menu" >
-            <li><a href="#" style="color: black;">Home</a></li>
-            <li style="background-color: transparent; color: white;"><a href="#">Services</a></li>
-            <li style="background-color: transparent; color: white;"><a href="#">About</a></li>
-            <li style="background-color: transparent; color: white;"><a href="#">Courses</a></li>
+            <!-- <li class="cross-icon"><i class="fa-solid fa-xmark"></i></li> -->
+            
+            <li style="background-color: transparent; color: white;"><a href="index.html">Home</a></li>
+            <li style="background-color: transparent; color: white;"><a href="services.html">Services</a></li>
+            <li style="background-color: transparent; color: white;"><a href="about.html">About</a></li>
+            <li style="background-color: transparent; color: white;"><a href="courses.html">Courses</a></li>
         </ul>
         <img src="Assets/nav-horizontal line.png" class="line-22">
-        <img src="Assets/phone-button.png">
+        <img src="Assets/phone-button.png" class="nav-img">
     </div>
 </nav>
 
@@ -294,15 +296,15 @@
       <h1>OUR SERVICES</h1>
     </div>
     <div class="row" style="display: flex; align-items: center; margin-bottom: 1rem;">
-      <div class="col-sm-8">
+      <div class="col-sm-8 serv-res">
       <h5>Our Services</h5>
     </div>
-    <div class="col-sm-4 view-all-btn">
+    <div class="col-sm-4 view-all-btn serv-btn">
       <button type="button" class="btn btn-lg2 " style="font-family: 'Teko'; padding: 0.5rem 2rem;">View All</button>
     </div>
     </div>
 
-    <div class="row" style="display: flex; justify-content: space-between;">
+    <div class="row" class="main-shopify-div">
       <div class="col-md-5 shopify-class">
         <div class="shopify-icon">
           <img src="Assets/shopify-back.png" width="20%" class="shopify-icon-1">
@@ -400,7 +402,7 @@
 </section>
 
 <!--sucess story section-->
-<section>
+<section class="tilled-images">
 <div class="container" style="padding-top: 20vh;">
 <div class="row">
 <div id="del1" class="delayed-section" data-scrub="0.5">
@@ -474,7 +476,7 @@
     </div>
     <div class="row" style="display: flex; justify-content: center; margin-top: 3rem;">
       <div class="col-lg-12" style="text-align: center;">
-        <video style="width: 100%; border: 10px solid #FBC108; border-radius: 20px;"  controls  autoplay preload="auto" loop>
+        <video style="width: 100%; border: 10px solid #FBC108; border-radius: 20px;" autoplay loop muted>
           <source src="Assets/dashboard-video.mp4" type="video/mp4">
         </video>
       </div>
@@ -488,6 +490,9 @@
       <h1><b>DONE FOR YOU <span style="color: #FBC108;">OR</span> DONE WITH YOU</b></h1>
     </div>
     <div class="row become-client-row">
+      <div class="col-md-6 client-vector" style="text-align: center;">
+        <img src="Assets/vector1.png" width="60%" class="vert-move">
+      </div>
       <div class="col-md-6 become-client-inner-1" style="padding-left: 4rem;"> 
         <h1>BECOME A <span style="color: #FBC108;">CLIENT</span></h1>
         <ul style="padding: 0rem; margin: 1.5rem 0rem;">
@@ -498,9 +503,6 @@
         </ul>
         <button type="button" class="btn btn-lg2 " style="font-family: 'Teko'; padding: 1rem 3rem;">Apply Now <i class="fa-solid fa-arrow-right"></i></button>
       </div>
-      <div class="col-md-6" style="text-align: center;">
-      <img src="Assets/vector1.png" width="60%" class="vert-move">
-    </div>
     </div>
     <div class="row become-client-row" style="background-image: linear-gradient(to right, #190723, #281273); margin-top: 2rem;">
       <div class="col-md-6" style="text-align: center;">
@@ -548,9 +550,9 @@
   </div>
 </section>
 <!--Booking section-->
-<section>
+<section class="booking-section">
   <div class="container novice-cont">
-    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+    <div class="row invoice-class" style="display: flex; justify-content: center; align-items: center;">
       <div class="col-md-6" style="color: black;">
         <h1 style="font-weight: 700; font-size: 430%;" class="from-voice">FROM INVOICE TO NINJA</h1>
         <P class="from-voice-inner">Every Secret Revealed Across Five E-Books. Download them for free.</P>
@@ -559,7 +561,7 @@
         <!-- <input type="email" class="input-email" id="input-id" placeholder="Enter your email"> -->
         <!-- <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" class="subscribe-field" style="background-color: white; color: black; border: none;">
         <button type="button" class="btn subscribe-btn">Send</button> -->
-        <div class="input-group mb-3" style="width: 190% !important;">
+        <div class="input-group mb-3" style="width: 190%;">
           <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" style="padding: 1rem !important; border-radius: 3rem !important; border: 1px solid transparent !important;">
           <div class="input-group-append" style="margin-left: -6rem; padding-top: 0px;">
             <button class="btn btn-outline-secondary" type="button" style="border-radius: 2rem; background-color: #FBC108; border: 4px solid white; color: black; padding: 1rem 2rem;">Send</button>
@@ -580,13 +582,13 @@
 <section>
   <div class="container footer-container">
     <div class="row footer-row">
-      <div class="col-md-4">
+      <div class="col-md-4 footer-logo-class">
       <img src="Assets/footer-logo.png">
     </div>
       <div class="col-md-8 insights">
         <h2>Our Insights, <span>Your <br> Advantage.</span> Subscribe! </h2>
         <form>
-          <label style="width: 60% !important;">
+          <label style="width: 60% !important;" class="footer-input-cl">
             <div class="input-group mb-3" style="width: 100% !important;">
               <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" style="padding: 1rem !important; border-radius: 3rem !important; border: 1px solid white !important; background-color: transparent !important;">
               <div class="input-group-append" style="margin-left: -6rem; padding-top: 0px;">
