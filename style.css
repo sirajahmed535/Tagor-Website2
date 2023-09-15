@@ -858,6 +858,12 @@ label{
         transform: rotate(360deg);
     }
 }
+@media (max-width: 1920px){
+    .main-shopify-di{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+}
 @media (min-width: 1280px) and (max-width: 1440px){
     .heading-class > .main-heading-txt{
         font-size: 3rem;

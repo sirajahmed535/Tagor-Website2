@@ -14,6 +14,8 @@ body p{
 }
 
 body{
+    padding: 0;
+    margin: 0;
     background-image: url(Assets/homepage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -147,3 +149,42 @@ body{
 .fa-circle-check{
     margin-right: 1rem;
 }
+.mentor-row, .curriculum-row{
+    text-align: center;
+    font-family: 'poppins';
+    color: white;
+}
+.mentor-row h1, .curriculum-row h1{
+    font-weight: bold;
+    font-size: 60px;
+    opacity: 0.2;   
+}
+.curriculum-row h3{
+    font-size: 20px;
+}
+.mentor-row p{
+    font-family: 'poppins';
+    font-weight: 400;
+}
+.tagor-img-cl{
+    display: flex;
+    padding: 2rem 3rem;
+}
+.tagor-img{
+    border-radius: 50px;
+}
+.sec-2{
+    font-family: 'poppins';
+    padding-top: 3rem;
+    color: white;
+}
+/* .sec-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); 
+    z-index: -1;
+} */
