@@ -149,17 +149,17 @@ body{
 .fa-circle-check{
     margin-right: 1rem;
 }
-.mentor-row, .curriculum-row{
+.mentor-row, .curriculum-row, .faq-row, .zero-row{
     text-align: center;
     font-family: 'poppins';
     color: white;
 }
-.mentor-row h1, .curriculum-row h1{
+.mentor-row h1, .curriculum-row h1, .faq-row h1, .zero-row h1{
     font-weight: bold;
     font-size: 60px;
     opacity: 0.2;   
 }
-.curriculum-row h3{
+.curriculum-row h3, .zero-row h3{
     font-size: 20px;
 }
 .mentor-row p{
@@ -188,3 +188,101 @@ body{
     background-color: rgba(255, 0, 0, 0.5); 
     z-index: -1;
 } */
+.roadmap-class{
+    width: 50%;
+}
+/* .road{
+    position: relative;
+}
+.road::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px; 
+    height: 100px; 
+    background-image: url('courses-assets/roadmap.png'); 
+    background-size: cover;
+
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  /* background-color: #fff; */
+  color: white;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  /* border-top: 1px solid; */
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+.shopify-class-1{
+    /* background: linear-gradient(-45deg, rgba(116,70,172,0.5), rgba(0,0,0, 0.5), rgba(37,85,131,0.6)); */
+    padding: 1rem 2rem; 
+    filter: drop-shadow(4px 4px 8px #000000);
+    margin: 0.5rem;
+    background: linear-gradient(-40deg, rgba(137,26,109,0.7), rgba(0,0,0, 0.5), rgba(46,4,167,0.7)) padding-box,
+              linear-gradient(45deg, rgba(137,26,109,0.9), rgba(0,0,0, 0.5), rgba(46,4,167,0.9)) border-box;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+  width: 48%;
+}
+.zero-2-row{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
