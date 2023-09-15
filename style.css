@@ -1370,10 +1370,125 @@ label{
     font-size: 12px;
    } 
 }
+@media (max-width: 419px){
+    .navbar{
+        padding: 20px 20px 20px 0px !important;
+    }
+    .inner-txt-div h2 {
+        font-size: 18px !important;
+}
+.services-row::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background: white;
+    left: 82px;
+    top: 40%;
+}
+.services-row::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 310px;
+    top: 40%;
+}
+.main-shopify-div{
+    text-align: center !important;
+    margin-left: 0rem !important;
+}
+#process-section-cl {
+    margin-top: 30rem !important;
+}
+.process-row::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 90px;
+    top: 40%;
+}
+.process-row::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 308px;
+    top: 40%;
+}
+.process-row-1::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background: white;
+    left: 80px;
+    top: 20%;
+}
+.process-row-1::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background: white;
+    left: 330px;
+    top: 20%;
+}
+.inner-process-row-2{
+    padding: 10px 20px;
+}
+.dashboard-vid{
+    padding: 10px 20px;
+}
+.process-row-2::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 40px;
+    top: 40%;
+}
+.process-row-2::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: white;
+    left: 360px;
+    top: 40%;
+}
+.from-voice {
+    font-size: 220% !important;
+}
+.footer-input-cl{
+    width: 100% !important;
+}
+.input-group{
+    margin-left: 0rem;
+    width: 94% !important;
+}
+.copyright-section p{
+    font-size: 0.7rem;
+}
+.carousel-3d-class {
+    width: 60% !important;
+    height: 60% !important;
+}
+.paragraph-txt{
+    padding: 10px 20px;
+}
+}
+
+
 @media (max-width: 376px){
   body{
-    margin-left: 3rem;
-    width: 100%;
+    margin-left: 3rem !important;
+    width: 100% !important;
   }
   .inner-txt-div{
     width: 100% !important;
