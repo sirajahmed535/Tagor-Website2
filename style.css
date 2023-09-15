@@ -5,6 +5,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     background-image: url(Assets/homepage.jpg);
@@ -319,9 +321,9 @@ to {
     scale: 1.6;
     opacity: 0.3;
 }
-.main-shopify-div{
+.main-shopify-di{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .services-row::before{
     content: "";
@@ -856,10 +858,13 @@ label{
         transform: rotate(360deg);
     }
 }
-
 @media (min-width: 1280px) and (max-width: 1440px){
     .heading-class > .main-heading-txt{
         font-size: 3rem;
+    }
+    .services-container > .main-shopify-di{
+        display: flex;
+        justify-content: space-around;
     }
     .services-row::before{
         content: "";
@@ -1241,6 +1246,19 @@ label{
     .inner-txt-div h2{
         font-size: 24px !important;
     }
+    .shopify-class{
+        width: 100% !important;
+        text-align: center;
+    }
+    .main-shopify-di{
+        margin: 1rem !important;
+    }
+    #process-section-cl {
+        margin-top: 40rem !important;
+    }
+    .process-row-1{
+        margin-bottom: 0rem;
+    }
     .services-row::after{
         content: "";
     position: absolute;
@@ -1266,13 +1284,7 @@ label{
     .serv-btn{
         text-align: center; 
     }
-    .shopify-class{
-        width: 90% !important;
-    }
-    .main-shopify-div{
-        padding-left: 3rem;
-        text-align: center;
-    }
+    
     .process-row::after{
         content: "";
     position: absolute;
@@ -1339,7 +1351,7 @@ label{
         height: 70% !important;
     } 
     #client-down-class{
-        padding-top: 6rem;
+        padding-top: 6rem !important;
     }
     .booking-section{
         margin: 2rem;
@@ -1349,7 +1361,10 @@ label{
     }
     .input-group{
     margin-right: 6rem;
-    margin-left: -2rem;
+    width: 100% !important;
+    }
+    .footer-input-cl{
+        width: 0% !important;
     }
    .footer-logo-class{
     text-align: center;
@@ -1371,11 +1386,29 @@ label{
    } 
 }
 @media (max-width: 419px){
-    .navbar{
-        padding: 20px 20px 20px 0px !important;
+    body{
+        margin: 5px;
     }
+    .diagonal-angle-cl {
+        /* margin: 0rem 2rem 0rem 1rem; */
+        margin: 1rem;
+    }
+        
     .inner-txt-div h2 {
         font-size: 18px !important;
+}
+.shopify-class{
+    width: 100% !important;
+    text-align: center;
+}
+.process-row-1{
+    margin-bottom: 0rem;
+}
+#client-down-class{
+    padding-top: 4rem !important;
+}
+ .main-shopify-di{
+    margin: 1rem;
 }
 .services-row::before {
     content: "";
@@ -1395,7 +1428,7 @@ label{
     left: 310px;
     top: 40%;
 }
-.main-shopify-div{
+.main-shopify-di{
     text-align: center !important;
     margin-left: 0rem !important;
 }
@@ -1486,13 +1519,10 @@ label{
 
 
 @media (max-width: 376px){
-  body{
-    margin-left: 3rem !important;
-    width: 100% !important;
-  }
+
   .inner-txt-div{
     width: 100% !important;
-    padding-right: 4rem !important;
+    padding-right: 6rem !important;
     text-align: center;
   }
   .services-row::before{
@@ -1513,7 +1543,7 @@ background: white;
 left: 290px;
 top: 40%;
 }
-.main-shopify-div{
+.main-shopify-di{
     display: flex;
     justify-content: center;
     text-align: center;
