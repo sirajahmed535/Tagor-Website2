@@ -51,58 +51,7 @@ body p{
 .line-11, .line-22{
     width: 20%;
 }
-/* .navbar>.container{
-    display: flex !important;
-    justify-content: space-around !important;
-}
-.nvbr-row{
-    display: flex;
-    align-items: center;
-}
-.nav-itemss{
-    display: flex;
-    padding-left: 0rem !important;
-}
-.nav-itemss ul {
-    display: flex;
-    justify-content: space-around;
-}
-.nav-itemss li{
-    color: white;
-    list-style-type: none;
-}
-.nav-itemss li .bar-link{
-    text-decoration: none;
-    font-family: 'teko';
-    padding: 0rem 2rem 0rem 2rem;
-    color: white;
-    transition: 0.5s !important;
-}
-.nav-itemss li .bar-link:hover{
-    border-radius: 2rem !important;
-    background-color: #FBC108 !important;
-    color: black !important;
-    padding: 0.3rem 1rem !important;
-    transition: 0.5s !important; 
-}
-.first-horizontal-line, .second-horizontal-line{
-    text-align: center;
-}
-.nav-linksss>.nav-itemss{
-    display: flex !important;
-    justify-content: space-around !important;
-    margin-bottom: 0rem !important;
-}
-.nav-linksss{
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 3rem;
-}
-.menu-bar{
-    font-size: 30px;
-    color: white;
-    display: none;
-} */
+
 .btn-lg{
     border-radius: 2rem !important;
     background-color: #FBC108 !important;
@@ -275,8 +224,10 @@ to {
     background-image: linear-gradient(#3F239B,#1D0279);
     padding: 3rem 2rem;
     border-radius: 20px;
+    font-family: 'poppins';
+    color: white;
 }
-.employees-div, .inner-txt-div{
+.inner-txt-div{
     font-family: 'poppins';
     color: white;
 }
@@ -685,32 +636,7 @@ to {
 label{
     position: relative;
 }
-.subscribe-field-1{
-    border: 1px solid white;
-    padding: 15px;
-    width: 400px;
-    border-radius: 30px;
-    background-color: transparent;
-}
-.subscribe-btn-1{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border: none;
-    padding: 9px;
-    border-radius: 40px;
-    width: 100px;
-    margin-top: 3px !important;
-    margin-right: 3px !important;
-}
-.subscribe-field{
-    border: 1px solid white;
-    padding: 15px;
-    width: 400px;
-    border-radius: 30px;
-    background-color: transparent;
-}
+
 .footer-row{
     display: flex;
     justify-content: space-around;
