@@ -14,11 +14,8 @@ body p{
 }
 
 body{
-    padding: 0;
-    margin: 0;
-    background-image: url(Assets/homepage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    overflow-x: hidden;
 }
 .navbar>.container{
     display: flex !important;
@@ -97,6 +94,7 @@ body{
     font-weight: 700;
     color: white;
     margin-bottom: 4rem;
+    text-align: left;
 }
 .btn-lg2{
     border-radius: 2rem !important;
@@ -222,13 +220,18 @@ h1 {
 
 .accordion-item {
   /* background-color: #fff; */
-  color: white;
+  color: black;
   margin: 1rem 0;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
 }
 
 .accordion-item-header {
+    color: white;
   padding: 0.5rem 3rem 0.5rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
@@ -261,7 +264,7 @@ h1 {
   padding: 1rem;
   line-height: 1.5rem;
   /* border-top: 1px solid; */
-  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  /* border-image: linear-gradient(to right, transparent, #34495e, transparent) 1; */
 }
 
 @media(max-width:767px) {
