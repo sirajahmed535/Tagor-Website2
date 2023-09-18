@@ -33,6 +33,7 @@ body{
     background-attachment: fixed;
     overscroll-behavior: none;
     overflow-x: hidden;
+    position: relative;
 }
 body p{
     font-weight: 300;
@@ -1424,24 +1425,24 @@ label{
     left: 320px !important;
 }
 #del1 {
-    position: relative;
+    /* position: relative; */
     left: -20vw !important;
 }
 .txt-img-class-one {
     max-width: 42% !important;
 }
 #del2 {
-    position: relative;
+    /* position: relative; */
     left: 17vw;
-    bottom: 130vw;
+    /* bottom: 130vw; */
 }
 .txt-img-class {
     max-width: 75% !important;
 }
 #del5 {
-    position: relative;
+    /* position: relative; */
     left: 88vw !important;
-    bottom: 263vw;
+    /* bottom: 263vw; */
 }
 .txt-img-class-1 {
     max-width: 34% !important;
@@ -1451,7 +1452,7 @@ label{
     margin-left: 0rem !important;
 }
 #process-section-cl {
-    margin-top: 0rem !important;
+    margin-top: 30rem !important;
 }
 .process-divv{
     padding-top: 0rem;
@@ -1527,7 +1528,7 @@ label{
 @media (max-width: 376px){
 
   .inner-txt-div{
-    position: relative;
+    /* position: relative; */
     width: 100% !important;
     /* padding-right: 6rem !important; */
     text-align: center;
@@ -1551,24 +1552,24 @@ label{
     text-align: center;
 }
 #del1 {
-    position: relative;
+    /* position: relative; */
     left: -20vw !important;
 }
 .txt-img-class-one {
     max-width: 40% !important;
 }
 #del2{
-    position: relative;
+    /* position: relative; */
     left: 18vw;
-    bottom: 123vw;
+    /* bottom: 123vw; */
 }
 .txt-img-class {
     max-width: 73% !important;
 }
 #del5{
-    position: relative;
+    /* position: relative; */
     left: 83vw;
-    bottom: 252vw;
+    /* bottom: 252vw; */
 }
 .invisible{
     display: none;
@@ -1580,7 +1581,7 @@ label{
     margin-top: 0rem !important;
 }
 .process-divv{
-    padding-top: 0rem !important;
+    padding-top: 40rem !important;
 }
 .process-divv > .process-row{
     margin-top: 0rem;
