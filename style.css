@@ -1,10 +1,11 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #preloader{
     background: #000 url(Assets/loader.gif) no-repeat center center;
@@ -22,7 +23,6 @@ html{
         opacity: 0;
         visibility: hidden;
     }
-
 }
 body{
     height: 100vh; 
@@ -30,8 +30,9 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow-x: hidden !important;
     background-attachment: fixed;
+    overscroll-behavior: none;
+    overflow-x: hidden;
 }
 body p{
     font-weight: 300;
@@ -232,6 +233,7 @@ to {
     color: white;
 }
 .inner-txt-div{
+    position: relative;
     font-family: 'poppins';
     color: white;
 }
@@ -1388,7 +1390,7 @@ label{
 @media (max-width: 419px){
     
     .main-slider-div{
-        margin: 10rem 10rem 8rem -8rem;
+        margin: 0rem 10rem 8rem -8rem;
         }
     .diagonal-angle-cl {
         /* margin: 0rem 2rem 0rem 1rem; */
@@ -1422,19 +1424,24 @@ label{
     left: 320px !important;
 }
 #del1 {
+    position: relative;
     left: -20vw !important;
 }
 .txt-img-class-one {
     max-width: 42% !important;
 }
 #del2 {
+    position: relative;
     left: 17vw;
+    bottom: 130vw;
 }
 .txt-img-class {
     max-width: 75% !important;
 }
 #del5 {
+    position: relative;
     left: 88vw !important;
+    bottom: 263vw;
 }
 .txt-img-class-1 {
     max-width: 34% !important;
@@ -1444,7 +1451,13 @@ label{
     margin-left: 0rem !important;
 }
 #process-section-cl {
-    margin-top: 40rem !important;
+    margin-top: 0rem !important;
+}
+.process-divv{
+    padding-top: 0rem;
+}
+.process-row{
+    margin-top: 0rem;
 }
 .process-row::before {
     
@@ -1514,9 +1527,13 @@ label{
 @media (max-width: 376px){
 
   .inner-txt-div{
+    position: relative;
     width: 100% !important;
-    padding-right: 6rem !important;
+    /* padding-right: 6rem !important; */
     text-align: center;
+  }
+  .main-slider-div{
+    margin: 0rem 10rem 8rem -8rem !important;
   }
   .services-row::before {
     
@@ -1534,21 +1551,27 @@ label{
     text-align: center;
 }
 #del1 {
+    position: relative;
     left: -20vw !important;
 }
 .txt-img-class-one {
     max-width: 40% !important;
 }
 #del2{
-    position: absolute;
-    left: 15vw;
+    position: relative;
+    left: 18vw;
+    bottom: 123vw;
 }
 .txt-img-class {
     max-width: 73% !important;
 }
 #del5{
-    position: absolute;
+    position: relative;
     left: 83vw;
+    bottom: 252vw;
+}
+.invisible{
+    display: none;
 }
 .txt-img-class-1{
     max-width: 30% !important;
@@ -1557,7 +1580,10 @@ label{
     margin-top: 0rem !important;
 }
 .process-divv{
-    padding-top: 30rem !important;
+    padding-top: 0rem !important;
+}
+.process-divv > .process-row{
+    margin-top: 0rem;
 }
 .process-row::before {
     
