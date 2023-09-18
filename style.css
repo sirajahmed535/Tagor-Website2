@@ -25,21 +25,14 @@ html{
 
 }
 body{
-    background-color: black;
-    overflow-x: hidden;
-    /* background-image: url('Assets/newhome.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-attachment: fixed;   */
-}
-/* body {
-    background-image: url('Assets/homepage.jpg');
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    height: 100vh; 
+    background-image: url('Assets/newhome.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden !important;
     background-attachment: fixed;
-    overflow-x: hidden; 
-    background-size: 100%;
-  } */
+}
 body p{
     font-weight: 300;
 }
@@ -342,6 +335,9 @@ to {
     margin-top: 5rem;
     scale: 1.6;
     opacity: 0.3;
+}
+.invisible > .container{
+    padding-top: 50rem !important;
 }
 .inner-dashboard{
     margin-bottom: 3rem;
@@ -789,21 +785,18 @@ label{
         transform: rotate(360deg);
     }
 }
-@media (max-width: 1920px){
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+@media (min-width: 1920px){
+
     .main-shopify-di{
         display: flex !important;
         justify-content: space-around !important;
     }
+    .invisible{
+        display: block;
+    }
 }
 @media (min-width: 1280px) and (max-width: 1440px){
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+    
     .heading-class > .main-heading-txt{
         font-size: 3rem;
     }
@@ -828,6 +821,9 @@ label{
         background: white;
         left: 720px;
         top: 40%;
+    }
+    .invisible{
+        display: block;
     }
     .process-row::before{
         content: "";
@@ -885,10 +881,7 @@ label{
     }
 }
 @media (min-width: 1240px) and (max-width: 1280px){
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+    
     .services-row::before{
         content: "";
         position: absolute;
@@ -906,6 +899,9 @@ label{
         background: white;
         left: 720px;
         top: 40%;
+    }
+    .invisible{
+        display: block;
     }
     .process-row::before{
         content: "";
@@ -1019,10 +1015,7 @@ label{
 
 /* Media query for responsive design */
 @media (max-width: 991px){
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+
     .line-11, .line-22{
         width: 16% !important;
     }
@@ -1128,10 +1121,7 @@ label{
     }
 }
 @media (max-width: 768px) {
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+    
     .header-section{
         padding-top: 0rem;
     }
@@ -1198,10 +1188,7 @@ label{
 }
 
 @media (max-width: 568px){
-    body{
-        background-color: black;
-        overflow-x: hidden;
-    }
+    
     .heading-class{
         width: 100%;
         text-align: center;
@@ -1331,10 +1318,7 @@ label{
    } 
 }
 @media (max-width: 500px){
-    body{
-        background-color: black;
-        /* overflow-x: hidden; */
-    }
+   
     .header-section{
         padding-top: 0rem;
     }
@@ -1402,12 +1386,7 @@ label{
 }
 }
 @media (max-width: 419px){
-    body{
-        background-color: black;
-        /* overflow-x: hidden !important; */
-        position: relative !important;
-        margin: 5px;
-    }
+    
     .main-slider-div{
         margin: 10rem 10rem 8rem -8rem;
         }
@@ -1533,12 +1512,6 @@ label{
 }
 
 @media (max-width: 376px){
-
-    body{
-        background-color: black;
-        overflow-x: hidden;
-        position: relative !important;
-    }
 
   .inner-txt-div{
     width: 100% !important;
