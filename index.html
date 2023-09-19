@@ -19,9 +19,32 @@
 <body>
   <!--Preloader-->
   <div id="preloader"></div>
-  <nav class="navbar">
+  <!--New navbar code-->
+  <nav class="navbar1">
+    <div class="logo"><img src="Assets/newlogo.png"></div>
+    <div class="line-11"><img src="Assets/nav-horizontal line.png"></div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+    </ul>
+    <div class="line-22"><img src="Assets/nav-horizontal line.png"></div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="phone-container"><i class="fa-solid fa-phone-volume"></i></div>
+</nav>
+
+
+
+  <!-- <nav class="navbar">
     <div class="navbar-container">
-      <img src="Assets/Logo.png" class="nav-img">
+      
+      <img src="Assets/newlogo.png" class="nav-img">
       <img src="Assets/nav-horizontal line.png" class="line-11">
 
         <div class="menu-toggle" id="menu-toggle">
@@ -31,8 +54,6 @@
         </div>
 
         <ul class="menu" id="menu" >
-            <!-- <li class="cross-icon"><i class="fa-solid fa-xmark"></i></li> -->
-            
             <li style="background-color: transparent; color: white;"><a href="index.html">Home</a></li>
             <li style="background-color: transparent; color: white;"><a href="services.html">Services</a></li>
             <li style="background-color: transparent; color: white;"><a href="about.html">About</a></li>
@@ -40,9 +61,10 @@
             <li style="background-color: transparent; color: white;"><a href="pricing.html">Pricing</a></li>
         </ul>
         <img src="Assets/nav-horizontal line.png" class="line-22">
-        <img src="Assets/phone-button.png" class="nav-img">
+        <i class="fa-solid fa-phone-volume"></i>
+      
     </div>
-</nav>
+</nav> -->
 
   <header class="main-header-section" id="header-id">
     <div class="container header-section">
@@ -65,13 +87,15 @@
         <div class="col-6 anime-lottie">
           <dotlottie-player autoplay loop mode="normal"
       src="lotties-files/header-new-anima.lottie"
-      style="width: 800px; margin: auto; padding-right: 2rem" class="anime-lottie-inner"></dotlottie-player>
+      style="width: 700px; margin: auto; padding-right: 2rem" class="anime-lottie-inner"></dotlottie-player>
         </div>
       </div>
 
     </div>
   </header>
-  
+  <section>
+    <div class="container">
+      <div class="row">
      <div class="logos">
       <div class="logos-slide">
     <img src="Assets/Compendium.png" >
@@ -103,7 +127,12 @@
         <img src="Assets/khalys-hair.png" >
           </div>
       </div>
-
+    </div>
+    </div>
+    </section>
+<section>
+  <div class="container"> 
+    <div class="row">
       <div class="logos-1">
         <div class="logos-slide-1">
       <img src="Assets/Veena-Vintage.png" >
@@ -125,7 +154,9 @@
           <img src="Assets/Spica.png" >
             </div>
         </div>
-
+      </div>
+      </div>
+      </section>
 <!--scroll trigger html code-->
 <!-- <div class="main-slider-div">
 <div class="line-1">
@@ -371,14 +402,17 @@
 </section>
 
 <!--sucess story section-->
-<section class="tilled-images">
-<div class="container" style="padding-top: 20vh;">
+
+<section class="tilled-images" style="position: relative;"> 
+<div class="container" style="padding-top: 24rem;">
 <div class="row">
-<div id="del1" class="delayed-section" data-scrub="0.5">
+  
+ <div id="del1" class="delayed-section" data-scrub="0.5">
   <div class="innerContainer">
     <img  src="Assets/success-story-img22.png" alt="" class="txt-img-class-one">
   </div>
 </div>
+
 <div id="del2" class="delayed-section" data-scrub="0.2">
   <div class="innerContainer">
     <img  src="Assets/success-story-img3.png" alt="" class="txt-img-class">
@@ -388,11 +422,12 @@
   <div class="innerContainer">
     <img  src="Assets/success-story-img4.png" alt=""  class="txt-img-class-1">
   </div>
-</div>
+</div> 
 
 </div>
 </div>
 </section>
+
 <!-- <section class="invisible" style="display: block;">
   <div class="container" style="padding: 34rem;">
 
@@ -400,7 +435,7 @@
 </section> -->
 <!--Process section-->
 <section  id="process-section-cl">
-<div class="container process-divv" style="padding-top: 6rem;">
+<div class="container process-divv">
   <div class="row process-row">
     <h1 class="inner-our-process">OUR PROCESS</h1>
   </div>
@@ -505,7 +540,7 @@
 <section class="booking-section">
   <div class="container novice-cont">
     <div class="row invoice-class" style="display: flex; justify-content: center; align-items: center;">
-      <div class="col-md-6" style="color: black;">
+      <div class="col-md-6 voice-heading" style="color: black; display: flex; flex-direction: column;">
         <h1 style="font-weight: 700; font-size: 430%;" class="from-voice">FROM INVOICE TO NINJA</h1>
         <P class="from-voice-inner">Every Secret Revealed Across Five E-Books. Download them for free.</P>
         <form>
@@ -519,7 +554,7 @@
       </label>
       </form>
       </div>
-      <div class="col-md-6" style="text-align: center;">
+      <div class="col-md-6 books-class" style="text-align: center;">
         <img src="Assets/Books 2.png" width="90%">
       </div>
       </div>

@@ -225,15 +225,25 @@ function rotate(e){
   });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
+//New Navbar code
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-  menuToggle.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
-  });
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const menuToggle = document.getElementById('menu-toggle');
+//   const menu = document.getElementById('menu');
+
+//   menuToggle.addEventListener('click', function () {
+//       menu.classList.toggle('active');
+//       menuToggle.classList.toggle('active');
+//   });
+// });
 
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
@@ -259,6 +269,7 @@ window.addEventListener('load', vanish);
 function vanish(){
   loader.classList.add('disppear');
 }
+
 
 
 
