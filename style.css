@@ -24,6 +24,9 @@ html{
         visibility: hidden;
     }
 }
+.content-container {
+    overflow-x: hidden;
+  }
 body{
     background-image: url('Assets/newhome.jpg');
     background-size: cover;
@@ -817,6 +820,9 @@ label{
     #process-section-cl{
         margin-top: -530vh;
     }
+    #client-down-class img{
+        width: 100% !important;
+    }
 }
 @media (min-width: 1280px){
     #process-section-cl{
@@ -825,6 +831,9 @@ label{
     .line-11 img, .line-22 img{
         width: 80%;
     }
+    #client-down-class img{
+        width: 100% !important;
+    }
 }
 @media (min-width: 1024px){
     #process-section-cl{
@@ -832,6 +841,9 @@ label{
     }
     .line-11 img, .line-22 img{
         width: 80%;
+    }
+    #client-down-class img{
+        width: 100% !important;
     }
     /* .services-row::before{
         left: 220px;
@@ -910,6 +922,9 @@ label{
     .process-row-2::after{
         left: 530px;
     } */
+    #client-down-class img{
+        width: 100% !important;
+    }
     .invoice-class > .from-voice{
         font-size: 250%;
     }
@@ -973,6 +988,9 @@ label{
     }
     #process-section-cl{
         margin-top: -350vh;
+    }
+    #client-down-class img{
+        width: 100% !important;
     }
     .become-client-row{
         text-align: center;
@@ -1142,8 +1160,31 @@ label{
         width: 90%;
         text-align: center;
     }
+    .tilled-images > .container{
+        padding-top: 14rem;
+    }
+    #del1{
+        left: -20vw;
+    }
+    .innerContainer > .txt-img-class-one{
+        max-width: 40% !important;
+    }
+    #del2{
+        left: 15vw;
+        bottom: 117vw;
+    }
+    .innerContainer > .txt-img-class{
+        max-width: 80% !important;
+    }
+    #del5{
+        left: 86vw !important;
+        bottom: 250vw;
+    }
+    .innerContainer > .txt-img-class-1{
+        max-width: 36% !important;
+    }
     #process-section-cl{
-        margin-top: -280vh;
+        margin-top: -330vh;
     } 
     #del5{
         left: 73vw;
@@ -1184,6 +1225,9 @@ label{
         width: 30px;
         left: 340px;
     } */
+    #client-down-class img{
+        width: 100% !important;
+    }
     .invoice-class{
         display: flex;
         flex-direction: column;
