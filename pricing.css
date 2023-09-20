@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+html{
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+.content-container {
+    overflow-x: hidden;
+  }
+body{
+    background-image: url('Assets/newhome.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+body p{
+    font-weight: 300;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'teko';
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.line-11, .line-22{
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 3rem;
+}
+
+.nav-links li {
+    /* margin: 0 15px; */
+    border-radius: 1.5rem;
+    padding: 0.3rem 0.7rem;
+}
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'teko';
+    font-size: 20px;
+    padding: 0.3rem 0.6rem;
+    transition: 0.5s linear;
+    border-radius: 1.5rem;
+}
+.nav-links a:hover{
+    background-color: #FBC108;
+    color: black;
+    border-radius: 1.5rem; 
+    transition: 1s;
+    
+}
+.phone-container i{
+    font-size: 50px;
+    color: #FBC108;
+}
+.phone-container i:hover{
+    transition: 0.8s;
+    transform: rotate(360deg);
+}
+/* Hamburger menu styles for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}

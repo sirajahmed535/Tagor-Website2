@@ -783,13 +783,6 @@ label{
     
   }
  
-  /* .carousel-3d-class::before{
-    content: ' ';
-   
-    top: 0; left: 0; bottom: 0; right: 0;
-    background-image: url(Assets/client-back.png);
-    z-index: 8;
-} */
 .circle-txt{
     position: absolute;
     width: 80%;
