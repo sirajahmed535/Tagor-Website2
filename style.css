@@ -377,48 +377,21 @@ to {
     height:100%;
     object-fit: cover;
 }
-
 .services-row, .process-row, .process-row-1, .process-row-2{
-    font-family: 'poppins';
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.services-row{
     position: relative;
     margin-bottom: 5rem;
     margin-top: 5rem;
     scale: 1.6;
     opacity: 0.3;
+    display: flex;
+    justify-content: center;
+}
+.services-row img , .process-row img, .process-row-1 img, .process-row-2 img{
+    width: 40%;
 }
 .main-shopify-di{
     display: flex;
     /* justify-content: space-between; */
-}
-.services-row::before{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 390px !important;
-    top: 40%;
-}
-.services-row::after{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 820px !important;
-    top: 40%;
-}
-.process-row{
-    position: relative;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-    scale: 1.6;
-    opacity: 0.3;
 }
 .inner-our-process-2, .inner-process-row-2{
     color: white;
@@ -426,82 +399,17 @@ to {
     font-family: 'poppins';
     margin: inherit;
 }
-.process-row::before{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 380px !important;
-    top: 40%;
-}
-.process-row::after{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 820px !important;
-    top: 40%;
-}
 #process-section-cl{
     padding-top: 34rem;
 }
-.process-row-1{
-    position: relative;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    scale: 1.6;
-    opacity: 0.3;
-}
+
 .invisible > .container{
     padding-top: 50rem !important;
 }
 .inner-dashboard{
     margin-bottom: 3rem;
 }
-.process-row-1::before{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 350px !important;
-    top: 20%;
-}
-.process-row-1::after{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 850px !important;
-    top: 20%;
-}
-.process-row-2{
-    position: relative;
-    margin-bottom: 8rem;
-    scale: 1.6;
-    opacity: 0.3;
-}
-.process-row-2::before{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 320px !important;
-    top: 40%;
-}
-.process-row-2::after{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 880px !important;
-    top: 40%;
-}
+
 .view-all-btn{
     text-align: end;
 }
@@ -925,19 +833,19 @@ label{
     .line-11 img, .line-22 img{
         width: 80%;
     }
-    .services-row::before{
+    /* .services-row::before{
         left: 220px;
     }
     .services-row::after{
         left: 620px;
-    }
-    .process-row::before{
+    } */
+    /* .process-row::before{
         left: 220px;
     }
     .process-row::after{
         left: 620px;
-    }
-    .process-row-1::before{
+    } */
+    /* .process-row-1::before{
         left: 190px;
     }
     .process-row-1::after{
@@ -948,7 +856,7 @@ label{
     }
     .process-row-2::after{
         left: 670px;
-    }
+    } */
 }
 @media (min-width: 768px) and (max-width: 1023px){
     .navbar1{
@@ -969,39 +877,39 @@ label{
     .anime-lottie dotlottie-player{
         width: 600px;
     }
-    .inner-txt-div{
-        /* position: relative !important; */
-    }
+    /* .inner-txt-div{
+        position: relative !important;
+    } */
     .inner-txt-div h2{
         font-size: 20px;
     }
-    .services-row::before{
+    /* .services-row::before{
         left: 120px;
     }
     .services-row::after{
         left: 480px;
-    }
-    .process-row::before{
+    } */
+    /* .process-row::before{
         left: 120px;
     }
     .process-row::after{
         left: 480px;
-    }
-    .process-row-1::before{
+    } */
+    /* .process-row-1::before{
         left: 90px;
     }
     .process-row-1::after{
         left: 510px;
-    }
+    } */
     .become-client-inner-2{
         padding-left: 0rem;
     }
-    .process-row-2::before{
+    /* .process-row-2::before{
         left: 70px;
     }
     .process-row-2::after{
         left: 530px;
-    }
+    } */
     .invoice-class > .from-voice{
         font-size: 250%;
     }
@@ -1010,6 +918,13 @@ label{
     }
 }
 @media (min-width: 568px) and (max-width: 767px){
+    body{
+        padding: 0px 10px;
+    }
+    .navbar1{
+        display: flex;
+        justify-content: space-between !important;
+    }
     .line-11, .line-22{
         display: none;
     }
@@ -1040,11 +955,8 @@ label{
     .inner-txt-div h2{
         font-size: 30px;
     }
-    .services-row::before{
-        left: 50px;
-    }
-    .services-row::after{
-        left: 400px;
+    .services-row img, .process-row img, .process-row-1 img, .process-row-2 img{
+        width: 50%;
     }
     .serv-res{
         text-align: center;
@@ -1060,31 +972,13 @@ label{
         padding-top: 10rem;
     }
     #process-section-cl{
-        margin-top: -240vh;
-    }
-    .process-row::before{
-        left: 50px;
-    }
-    .process-row::after{
-        left: 400px;
-    }
-    .process-row-1::before{
-        left: 30px;
-    }
-    .process-row-1::after{
-        left: 420px;
+        margin-top: -350vh;
     }
     .become-client-row{
         text-align: center;
     }
     .become-client-inner-2{
         padding-left: 0rem !important; 
-    }
-    .process-row-2::before{
-        left: 0px;
-    }
-    .process-row-2::after{
-        left: 450px;
     }
     .invoice-class{
         display: flex;
@@ -1147,6 +1041,9 @@ label{
  }
 
 @media (min-width: 375px) and (max-width: 567px){
+    body{
+        padding: 0px 10px;
+    }
 
     .line-11, .line-22{
         display: none;
@@ -1187,8 +1084,8 @@ label{
     .logo, .phone-container, .hamburger{
         z-index: 2 !important;
     }
-    .heading-class{
-        padding-top: 2rem;
+    .header-main-row > .heading-class{
+        padding-top: 2rem !important;
     }
     .header-section{
         padding-top: 0rem !important;
@@ -1205,7 +1102,10 @@ label{
         padding-left: 0rem !important;
     }
     .anime-lottie dotlottie-player{
-        width: 500px;
+        width: 500px !important;
+    }
+    .services-row img, .process-row img, .process-row-1 img, .process-row-2 img{
+        width: 70%;
     }
     .heading-class{
         width: 100%;
@@ -1222,16 +1122,16 @@ label{
         padding-right: 4rem;
     }
     .main-slider-div{
-        margin: 10rem 10rem 8rem -8rem;
+        margin: 10rem 10rem 8rem -8rem !important;
     }
-    .services-row::before{
+    /* .services-row::before{
         width: 50px;
         left: 40px;
     }
     .services-row::after{
         width: 50px;
         left: 286px;
-    }
+    } */
     .serv-res{
         text-align: center;
     }
@@ -1243,27 +1143,27 @@ label{
         text-align: center;
     }
     #process-section-cl{
-        margin-top: -150vh;
+        margin-top: -280vh;
     } 
     #del5{
         left: 73vw;
     }
-    .process-row::before{
+    /* .process-row::before{
         width: 50px;
         left: 40px;
     }
     .process-row::after{
         width: 50px;
         left: 285px;
-    }
-    .process-row-1::before{
+    } */
+    /* .process-row-1::before{
         width: 50px;
         left: 100px;
     }
     .process-row-1::after{
         width: 50px;
         left: 225px;
-    }
+    } */
     .inner-dashboard{
         margin-bottom: 0rem;
     }
@@ -1271,22 +1171,28 @@ label{
         text-align: center;
     }
     .become-client-inner-1{
-        padding-left: 0rem;
+        padding-left: 0rem !important;
     }
-    .process-row-2::before{
+    .become-client-inner-2{
+        padding-left: 0rem !important;
+    }
+    /* .process-row-2::before{
         width: 30px;
         left: 0px;
     }
     .process-row-2::after{
         width: 30px;
         left: 340px;
-    }
+    } */
     .invoice-class{
         display: flex;
         flex-direction: column;
     }
+    .voice-heading > .from-voice-inner{
+        text-align: center;
+    }
     .from-voice{
-        font-size: 230% !important;
+        font-size: 220% !important;
         text-align: center;
     }
     .input-group{
@@ -1309,842 +1215,3 @@ label{
     }
 
 }
-/* @media (min-width: 1280px) and (max-width: 1440px){
-    
-    .heading-class > .main-heading-txt{
-        font-size: 3rem;
-    }
-    .services-container > .main-shopify-di{
-        display: flex;
-        justify-content: space-around;
-    }
-    .services-row::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 300px;
-        top: 40%;
-    }
-    .services-row::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 720px;
-        top: 40%;
-    }
-    .invisible{
-        display: block;
-    }
-    .process-row::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 300px;
-        top: 40%;
-    }
-    .process-row::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 720px;
-        top: 40%;
-    }
-    .process-row-1::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 270px;
-        top: 40%;
-    }
-    .process-row-1::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 750px;
-        top: 40%;
-    }
-    .process-row-2::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 230px;
-        top: 40%;
-    }
-    .process-row-2::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 790px;
-        top: 40%;
-    }
-} */
-/* @media (min-width: 1240px) and (max-width: 1280px){
-    
-    .services-row::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 300px;
-        top: 40%;
-    }
-    .services-row::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 720px;
-        top: 40%;
-    }
-    .invisible{
-        display: block;
-    }
-    .process-row::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 300px;
-        top: 40%;
-    }
-    .process-row::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 720px;
-        top: 40%;
-    }
-    .process-row-1::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 270px;
-        top: 40%;
-    }
-    .process-row-1::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 750px;
-        top: 40%;
-    }
-    .process-row-2::before{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 230px;
-        top: 40%;
-    }
-    .process-row-2::after{
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 790px;
-        top: 40%;
-    }
-}
-
-
-.navbar {
-    background-color: #333;
-    color: #fff;
-    position: relative;
-    padding: 20px 0;
-}
-
-.navbar-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px 0;
-    transition: background-color 0.3s ease;
-} */
-
-/* Media query for responsive design */
-/* @media (max-width: 991px){
-
-    .line-11, .line-22{
-        width: 16% !important;
-    }
-    .anime-lottie-inner{
-        width: 700px !important;
-    }
-    .main-heading-txt{
-        font-size: 2.2rem !important;
-    }
-    .heading-class{
-        padding-top: 2rem !important;
-        padding-left: 1rem !important;
-    }
-    .inner-txt-div h2{
-        font-size: 24px !important;
-    }
-    .services-row::after{
-        content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 500px;
-    top: 40%;
-    }
-    .services-row::before{
-        content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 100px;
-    top: 40%;
-    }
-    .invisible{
-        display: none;
-    }
-    #process-section-cl{
-        margin-top: 60rem !important;
-    }
-    .process-row::before {
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 100px;
-        top: 40%;
-}
-.process-row::after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 500px;
-    top: 40%;
-}
-.process-row-1::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 80px;
-    top: 20%;
-}
-.process-row-1::after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 530px;
-    top: 20%;
-}
-.process-row-2::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 1px;
-    background: white;
-    left: 50px;
-    top: 40%;
-}
-    .process-row-2::after {
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 1px;
-        background: white;
-        left: 550px;
-        top: 40%;
-}
-    .from-voice{
-        font-size: 250% !important;
-    }
-    .become-client-inner-2{
-        padding-left: 0rem !important;
-    }
-    .input-group{
-        width: 120% !important;
-    }
-} */
-/* @media (max-width: 768px) {
-    
-    .header-section{
-        padding-top: 0rem;
-    }
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        background-image: linear-gradient(to top, #391141, #000000);
-        width: 100%;
-        text-align: center;
-        z-index: 1;
-        border-radius: 0px;
-        border: none;
-        align-items: center;
-    }
-    .nav-img{
-        z-index: 2 !important;
-    }
-    .menu-toggle{
-        z-index: 2 !important;
-    }
-    .menu li{
-        width: 100px;
-        margin: 30px 10px !important;
-    }
-    .menu li:hover{
-        background-color: #FBC108 !important;
-        color: #000000 !important;
-    }
-    .menu > .cross-icon{
-        background-color: transparent;
-        margin-left: 40rem !important;
-    }
-
-    .menu.active {
-        display: flex;
-        padding-top: 7rem;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .anime-lottie-inner{
-        width: 600px !important; 
-    }
-    .inner-txt-div h2 {
-        font-size: 18px !important;
-    }
-    .inner-txt-div p{
-        font-size: 0.8rem !important;
-    }
-    .shopify-class{
-        width: 100% !important;
-    }
-    .invisible{
-        display: none;
-    }
-    .process-divv{
-        padding-top: 0rem;
-    }
-} */
-
-/* @media (max-width: 568px){
-    
-    .heading-class{
-        width: 100%;
-        text-align: center;
-    }
-    .social-media-icons{
-        width: 100%;
-    }
-    .anime-lottie{
-        width: 100%;
-        padding-left: 0rem;
-    }
-    .inner-txt-div{
-        width: 60% !important;
-    }
-    .inner-txt-div h2{
-        font-size: 24px !important;
-    }
-    .shopify-class{
-        width: 100% !important;
-        text-align: center;
-    }
-    .main-slider-div{
-        margin: 10rem 10rem 8rem -8rem;
-    }
-    .main-shopify-di{
-        margin: 1rem !important;
-    }
-    #process-section-cl {
-        margin-top: 40rem !important;
-    }
-    .process-row-1{
-        margin-bottom: 0rem;
-    }
-    .services-row::after{
-        
-    width: 50px !important;
-    left: 400px !important;
-
-    }
-    .services-row::before{
-    
-    width: 50px !important;
-    left: 120px !important;
-    }
-    .serv-res{
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .serv-btn{
-        text-align: center; 
-    }
-    
-    .process-row::after{
-       
-    width: 50px !important;
-    left: 400px !important;
-    }
-    .process-row::before{
-        
-    width: 50px !important;
-    left: 120px !important;
-    }
-    .process-row-1::before{
-        
-    width: 40px !important;
-    left: 110px !important;
-    }
-    .process-row-1::after{
-       
-    width: 40px !important;
-    left: 420px !important;
-    }
-    .become-client-row{
-        margin: 2rem;
-    }
-    .become-client-inner-1, .become-client-inner-2{
-        padding-left: 0rem !important;
-        text-align: center;
-    }
-    .process-row-2::before{
-        
-    width: 50px !important;
-    left: 70px !important;
-    }
-    .process-row-2::after{
-        
-    width: 50px !important; 
-    left: 450px !important;
-    }
-    .carousel-3d-class{
-        width: 70% !important;
-        height: 70% !important;
-    } 
-    #client-down-class{
-        padding-top: 6rem !important;
-    }
-    .booking-section{
-        margin: 2rem;
-    }
-    .invoice-class{
-        text-align: center;
-    }
-    .input-group{
-    margin-right: 6rem;
-    width: 100% !important;
-    }
-    .footer-input-cl {
-        width: 80% !important;
-    }
-   .footer-logo-class{
-    text-align: center;
-    margin-bottom: 2rem;
-   }
-   .insights{
-    text-align: center;
-   }
-   .footer-logo-class img{
-    width: 24%;
-   }
-   .horizontal-line-footer{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 2rem;
-   }
-   .quick-links{
-    font-size: 12px;
-   } 
-} */
-/* @media (max-width: 500px){
-   
-    .header-section{
-        padding-top: 0rem;
-    }
-    .main-slider-div{
-    margin: 10rem 10rem 8rem -8rem;
-    }
-    .services-container {
-        color: white !important;
-        padding-top: 2rem !important;
-    }
-    .services-row::before {
-       
-        width: 50px !important;
-        left: 90px !important;
-}
-.services-row::after {
-    
-    width: 50px !important;
-    left: 360px !important;
-}
-.txt-img-class-one {
-    max-width: 32% !important;
-}
-.txt-img-class {
-    max-width: 58% !important;
-}
-.txt-img-class-1 {
-    max-width: 26% !important;
-}
-#del5 {
-    left: 86vw !important;
-}
-.process-row::before {
-   
-    width: 50px !important;
-    left: 90px !important;
-}
-.process-row::after {
-    
-    width: 50px !important;
-    left: 360px !important;
-}
-.process-row-1::before {
-    
-    width: 40px !important;
-    left: 80px !important;
-}
-.process-row-1::after {
-   
-    width: 40px !important;
-    left: 380px !important;
-}
-.process-row-2::before {
-    
-    width: 50px !important;
-    left: 40px !important;
-}
-.process-row-2::after {
-    
-    width: 50px !important;
-    left: 410px !important;
-}
-#client-down-class img{
-    width: 100% !important;
-}
-} */
-/* @media (max-width: 419px){
-    
-    .main-slider-div{
-        margin: 0rem 10rem 8rem -8rem;
-        }
-    .diagonal-angle-cl {
-        
-        margin: 1rem !important;
-    }
-        
-    .inner-txt-div h2 {
-        font-size: 18px !important;
-}
-.shopify-class{
-    width: 100% !important;
-    text-align: center !important;
-}
-.process-row-1{
-    margin-bottom: 0rem !important;
-}
-#client-down-class{
-    padding-top: 4rem !important;
-}
- .main-shopify-di{
-    margin: 1rem !important;
-}
-.services-row::before {
-   
-    width: 50px !important;
-    left: 50px !important;
-}
-.services-row::after {
-   
-    width: 50px !important;
-    left: 320px !important;
-}
-#del1 {
-    
-    left: -20vw !important;
-}
-.txt-img-class-one {
-    max-width: 42% !important;
-}
-#del2 {
-    
-    left: 17vw;
-    
-}
-.txt-img-class {
-    max-width: 75% !important;
-}
-#del5 {
-    
-    left: 88vw !important;
-    
-}
-.txt-img-class-1 {
-    max-width: 34% !important;
-}
-.main-shopify-di{
-    text-align: center !important;
-    margin-left: 0rem !important;
-}
-#process-section-cl {
-    margin-top: 30rem !important;
-}
-.process-divv{
-    padding-top: 0rem;
-}
-.process-row{
-    margin-top: 0rem;
-}
-.process-row::before {
-    
-    width: 20px !important;
-    left: 90px !important;
-}
-.process-row::after {
-   
-    width: 20px !important ;
-    left: 308px !important;
-}
-.process-row-1::before {
-    
-    width: 10px !important;
-    left: 70px !important;
-}
-.process-row-1::after {
-    
-    width: 10px !important;
-    left: 330px !important;
-}
-.inner-process-row-2{
-    padding: 10px 20px !important;
-}
-.dashboard-vid{
-    margin-top: 0rem !important;
-    padding: 0px 0px !important;
-}
-.vectors-section {
-    padding-top: 6rem !important;
-}
-.sound-bites{
-    padding-top: 4rem !important;
-}
-.client-down-class img{
-    width: 100% !important;
-}
-.process-row-2::before {
-   
-    width: 20px !important;
-    left: 40px !important;
-}
-.process-row-2::after {
-   
-    width: 20px !important;
-    left: 360px !important;
-}
-.input-group {
-    margin-left: 0rem;
-    width: 100% !important;
-}
-.footer-input-cl{
-    width: 100% !important;
-}
-.copyright-section p{
-    font-size: 0.7rem !important;
-}
-.carousel-3d-class {
-    width: 60% !important;
-    height: 60% !important;
-}
-.paragraph-txt{
-    padding: 10px 20px !important;
-}
-} */
-
-/* @media (max-width: 376px){
-
-  .inner-txt-div{
-    
-    width: 100% !important;
-    
-    text-align: center;
-  }
-  .main-slider-div{
-    margin: 0rem 10rem 8rem -8rem !important;
-  }
-  .services-row::before {
-    
-    width: 50px !important;
-    left: 30px !important;
-}
-.services-row::after {
-    
-    width: 50px !important;
-    left: 290px !important;
-}
-.main-shopify-di{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#del1 {
-
-    left: -20vw !important;
-}
-.txt-img-class-one {
-    max-width: 40% !important;
-}
-#del2{
-    
-    left: 18vw;
-    
-}
-.txt-img-class {
-    max-width: 73% !important;
-}
-#del5{
-    
-    left: 83vw;
-    
-}
-.invisible{
-    display: none;
-}
-.txt-img-class-1{
-    max-width: 30% !important;
-}
-#process-section-cl{
-    margin-top: 0rem !important;
-}
-.process-divv{
-    padding-top: 40rem !important;
-}
-.process-divv > .process-row{
-    margin-top: 0rem;
-}
-.process-row::before {
-    
-    width: 20px !important;
-    left: 60px !important;
-}
-.process-row::after {
-
-    width: 20px !important; 
-    left: 284px !important;
-}
-.process-row-1::before {
-    
-    width: 50px !important;   
-    left: 90px !important;   
-}
-.process-row-1::after {
-    
-    width: 60px !important;
-    left: 220px !important;    
-}
-.process-row-1{
-    margin-bottom: 0rem;
-}
-.become-client-row{
-    margin: 0rem;
-}
-.process-row-2::before {
-    
-    width: 40px !important;
-    left: 0px !important;
-}
-.process-row-2::after {
-    width: 40px !important;
-    left: 330px !important;
-}
-#client-down-class img{
-    width: 100% !important;
-}
-#client-down-class{
-    padding-top: 7rem;
-}
-.booking-section {
-     margin: 0rem;
-}
-.footer-input-cl{
-    width: 100% !important;
-}
-.input-group{
-    margin-left: 0rem !important;
-}
-} */
