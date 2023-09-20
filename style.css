@@ -809,6 +809,39 @@ label{
         display: block;
     }
 } */
+@media (min-width: 3440px){
+    .navbar1{
+        display: flex;
+        justify-content: center;
+    }
+    .employees-div > .inner-txt-div{
+        width: 20%;
+    }
+    #del1{
+        left: -10vw;
+    }
+    .innerContainer > .txt-img-class-one{
+        max-width: 40% !important;
+    }
+    #del2{
+        left: 4vw;
+        bottom: 45vw;
+    }
+    .innerContainer > .txt-img-class{
+        max-width: 76% !important;
+    }
+    #del5{
+        left: 31vw;
+        bottom: 94vw;
+    }
+    .innerContainer > .txt-img-class-1{
+        max-width: 36% !important;
+    }
+    #process-section-cl {
+        margin-top: -450vh !important;
+    }
+
+}
 @media (min-width: 1440px) {
     #process-section-cl{
         margin-top: -530vh;
