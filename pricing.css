@@ -149,13 +149,14 @@ header::before {
     text-align: center;
     color: white;
     font-family: 'poppins';
+    position: relative;
 }
 .say-hello-class h1::before{
     content: 'WHAT YOU GET';
     display: block;
     position: absolute;
-    left: 300px;
-    top: 800px;
+    left: 150px;
+    top: 0px;
     z-index: -1;
     font-size: 8rem;
     font-weight: bold;
@@ -170,3 +171,101 @@ header::before {
     align-items: center;
     padding-top: 4rem;
 }
+/* .pricing-cont{
+    font-family: 'poppins';
+    color: white;
+}
+.pricing-content{
+    background-image: linear-gradient(to top, #1E0E34, #2F1584);
+    border: 1px dashed white;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+}
+.pricing-row{
+    display: flex;
+    justify-content: center;
+}
+.pricing-cont{
+    padding-top: 8rem;
+}
+.pricing-toggler{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 1rem 0rem;
+    margin: 1rem;
+    width: 20%;
+}
+.pricing-toggler span{
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.yearly-1{
+    display: none;
+}
+.pricing-toggler span.active{
+    background-color: #FBC108;
+    border-radius: 30px;
+}
+.pricing-toggler-row{
+    display: flex;
+    justify-content: center;
+} */
+
+.pricing-container{
+    text-align: center;
+    font-family: 'poppins';
+  }
+  
+  .pricing-container .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+  }
+  
+  .pricing-container .box-container .box{
+    background-image: linear-gradient(to top, #1E0E34, #2F1584);
+    border-radius: 30px;
+    border: 2px dashed white;
+    padding: 2rem;
+  }
+  
+  .pricing-container .box-container .box .price{
+    color:#fff;
+    background: transparent;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  .pricing-container .box-container .box .price.year{
+    display: none;
+  }
+  
+  .pricing-container .price-toggler{
+    margin-top: 20px;
+    display: inline-block;
+    padding:5px;
+    border:2px solid white;
+    background: transparent;
+    border-radius: 30px;
+  }
+  
+  .pricing-container .price-toggler span{
+    padding:7px 30px;
+    cursor: pointer;
+    color:white;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  .pricing-container .price-toggler span.active{
+    background: #FBC108;
+    color:black;
+    border-radius: 30px;
+  }
+  .box p{
+    color: white;
+  }
