@@ -269,3 +269,21 @@ header::before {
   .box p{
     color: white;
   }
+  .social-handles button{
+    height: 8vh !important;
+    background-color: transparent;
+    padding: 0rem 1rem;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    margin: 1rem;
+  }
+  .social-handles button img{
+    width: 24%;
+  }
+  .social-handles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
