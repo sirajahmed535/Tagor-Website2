@@ -145,3 +145,28 @@ header::before {
     display: flex;
     justify-content: center;
 }
+.say-hello-class{
+    text-align: center;
+    color: white;
+    font-family: 'poppins';
+}
+.say-hello-class h1::before{
+    content: 'WHAT YOU GET';
+    display: block;
+    position: absolute;
+    left: 300px;
+    top: 800px;
+    z-index: -1;
+    font-size: 8rem;
+    font-weight: bold;
+    opacity: 0.05; 
+}
+.say-hello-inner-1{
+    color: white;
+    font-family: 'poppins';
+}
+.say-hello-row{
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+}
