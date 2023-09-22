@@ -149,9 +149,10 @@ header::before {
     text-align: center;
     color: white;
     font-family: 'poppins';
-    position: relative;
+    /* position: relative; */
 }
-.say-hello-class h1::before{
+
+/* .say-hello-class h1::before{
     content: 'WHAT YOU GET';
     display: block;
     position: absolute;
@@ -161,7 +162,7 @@ header::before {
     font-size: 8rem;
     font-weight: bold;
     opacity: 0.05; 
-}
+} */
 .say-hello-inner-1{
     color: white;
     font-family: 'poppins';
@@ -171,46 +172,7 @@ header::before {
     align-items: center;
     padding-top: 4rem;
 }
-/* .pricing-cont{
-    font-family: 'poppins';
-    color: white;
-}
-.pricing-content{
-    background-image: linear-gradient(to top, #1E0E34, #2F1584);
-    border: 1px dashed white;
-    border-radius: 20px;
-    padding: 3rem;
-    text-align: center;
-}
-.pricing-row{
-    display: flex;
-    justify-content: center;
-}
-.pricing-cont{
-    padding-top: 8rem;
-}
-.pricing-toggler{
-    border: 2px solid white;
-    border-radius: 30px;
-    padding: 1rem 0rem;
-    margin: 1rem;
-    width: 20%;
-}
-.pricing-toggler span{
-    padding: 1rem 2rem;
-    cursor: pointer;
-}
-.yearly-1{
-    display: none;
-}
-.pricing-toggler span.active{
-    background-color: #FBC108;
-    border-radius: 30px;
-}
-.pricing-toggler-row{
-    display: flex;
-    justify-content: center;
-} */
+
 
 .pricing-container{
     text-align: center;
@@ -287,3 +249,97 @@ header::before {
     align-items: center;
     padding-top: 2rem;
   }
+  .our-videos-class{
+    text-align: center;
+    color: white;
+    font-family: 'poppins';
+    /* position: relative;  */
+}
+/* .our-videos-class h1::before{
+    content: 'OUR VIDEOS';
+    display: block;
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    z-index: -1;
+    font-size: 8rem;
+    font-weight: bold;
+    opacity: 0.05; 
+} */
+
+/* #carousel-container {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 300px;
+    height: 200px;
+} */
+
+.carousel-item-1 video{
+    object-fit: cover;
+}
+
+/* .slider {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    background: #ff9966; 
+    background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);
+    background: linear-gradient(to bottom, #ff5e62, #ff9966);
+    color: #fff;
+  }
+  .slider-card {
+    background: #fff;
+    padding: 0px 0px;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  .slider-card img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  .owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+  }
+  .owl-dots {
+    text-align: center;
+  }
+  .owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+  }
+  .owl-dots .owl-dot.active {
+    background: #f44336 !important; 
+  }*/
