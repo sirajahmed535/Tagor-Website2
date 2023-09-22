@@ -112,45 +112,42 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
 let month = document.querySelector('.price-toggler .month');
 let year = document.querySelector('.price-toggler .year');
+let adsense = document.querySelector('.social-handles .adsense-btn');
 let monthAmount = document.querySelectorAll('.box-container .box .month');
 let yearAmount = document.querySelectorAll('.box-container .box .year');
+let adsenseamount = document.querySelectorAll('.box-container .box .adsens');
 
 year.onclick = () => {
   year.classList.add('active');
   month.classList.remove('active');
+  adsense.classList.remove('active');
 
   monthAmount.forEach(mo => { mo.style.display = 'none' });
   yearAmount.forEach(yr => { yr.style.display = 'block' });
+  adsenseamount.forEach(ad => { ad.style.display = 'none'});
 };
 
 month.onclick = () => {
   year.classList.remove('active');
   month.classList.add('active');
+  adsense.classList.remove('active');
 
   monthAmount.forEach(mo => { mo.style.display = 'block' });
   yearAmount.forEach(yr => { yr.style.display = 'none' });
+  adsenseamount.forEach(ad => { ad.style.display = 'none'});
 };
 
-const carousell = document.getElementsByClassName('carousells');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const carouselItems = document.querySelectorAll('.carousel-item-1');
+adsense.onclick = () => {
+  year.classList.remove('active');
+  month.classList.add('active');
+  adsense.classList.add('active');
 
-let currentIndex = 0;
+  monthAmount.forEach(mo => { mo.style.display = 'none' });
+  yearAmount.forEach(yr => { yr.style.display = 'none' });
+  adsenseamount.forEach(ad => { ad.style.display = 'block'});
+};
 
+const swiper = document.querySelector('.swiper').swiper;
 
-function updateCarousel() {
-  carousell.style.transform = `translateX(-${currentIndex * 300}px)`;
-}
-
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % carouselItems.length;
-  updateCarousel();
-});
-
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-  updateCarousel();
-});
+// Now you can use all slider methods like
+swiper.slideNext();
