@@ -322,10 +322,10 @@ month.onclick = () =>{
 //   });
 // });
 
-const carousel = document.getElementById('carousel');
+const carousel = document.getElementsByClassName('carousells');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
-        const carouselItems = document.querySelectorAll('.carousel-item');
+        const carouselItems = document.querySelectorAll('.carousel-item-1');
 
         let currentIndex = 0;
 
