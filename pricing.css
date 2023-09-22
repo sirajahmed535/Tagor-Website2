@@ -448,10 +448,13 @@ header::before {
 }
 
 /*aCCORDIAN*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
-.accordion {
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  
+  .accordion {
     width: 90%;
     max-width: 1000px;
     margin: 2rem auto;
