@@ -119,6 +119,7 @@ header::before {
     font-size: 4rem;
     font-weight: 700;
     color: white;
+    text-align: left;
 }
 .pricing-header-inner p{
     font-family: 'poppins';

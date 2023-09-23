@@ -1,3 +1,4 @@
+
 let loader = document.querySelector('#preloader');
 
 window.addEventListener('load', vanish);
@@ -5,16 +6,29 @@ window.addEventListener('load', vanish);
 function vanish() {
   loader.classList.add('disppear');
 }
+//popup
+function showPopup() {
+  document.getElementById("popup-container").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup-container").style.display = "none";
+}
+
+// Show the popup when the page loads
+window.onload = showPopup;
+
 
 document.addEventListener('scroll', function(e) {
   // Prevent horizontal scrolling by resetting scrollLeft to 0
   window.scrollTo(0, window.scrollY);
 });
 
-  gsap.to(smoother, {
-    	scrollTop: smoother.offset(".main-slider-div", "center center"),
-    	duration: 1
-    });
+// gsap.to(smoother, {
+// scrollTop: smoother.offset(".main-slider-div", "center center"),
+// duration: 1
+// });
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".services-row", {
@@ -22,11 +36,11 @@ gsap.to(".services-row", {
   opacity: 1,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".services-row",
-    start: "top 70%",
-    end: "bottom 20%",
-    toggleActions: "play pause resume reverse",
-    markers: false
+  trigger: ".services-row",
+  start: "top 70%",
+  end: "bottom 20%",
+  toggleActions: "play pause resume reverse",
+  markers: false
   }
 })
 
@@ -48,11 +62,11 @@ delSections.forEach(section => {
     y: "100vh",
     ease: "none",
     scrollTrigger: {
-      scrub: true,
-      trigger: section,
-      start: "top bottom",
-      end: "bottom top",
-      onUpdate: self => progressTo(self.progress)
+    scrub: true,
+    trigger: section,
+    start: "top bottom",
+    end: "bottom top",
+    onUpdate: self => progressTo(self.progress)
     }
   });
 
@@ -63,11 +77,11 @@ gsap.to(".process-row", {
   opacity: 1,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".process-row",
-    start: "top 70%",
-    end: "bottom 20%",
-    toggleActions: "play pause resume reverse",
-    markers: false
+  trigger: ".process-row",
+  start: "top 70%",
+  end: "bottom 20%",
+  toggleActions: "play pause resume reverse",
+  markers: false
   }
 })
 
@@ -76,11 +90,11 @@ gsap.to(".process-row-1", {
   opacity: 1,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".process-row-1",
-    start: "top 70%",
-    end: "bottom 20%",
-    toggleActions: "play pause resume reverse",
-    markers: false
+  trigger: ".process-row-1",
+  start: "top 70%",
+  end: "bottom 20%",
+  toggleActions: "play pause resume reverse",
+  markers: false
   }
 })
 
@@ -89,11 +103,11 @@ gsap.to(".process-row-2", {
   opacity: 1,
   duration: 0.5,
   scrollTrigger: {
-    trigger: ".process-row-2",
-    start: "top 70%",
-    end: "bottom 20%",
-    toggleActions: "play pause resume reverse",
-    markers: false
+  trigger: ".process-row-2",
+  start: "top 70%",
+  end: "bottom 20%",
+  toggleActions: "play pause resume reverse",
+  markers: false
   }
 })
 
@@ -152,7 +166,39 @@ adsense.onclick = () => {
   adsenseamount.forEach(ad => { ad.style.display = 'block'});
 };
 
-const swiper = document.querySelector('.swiper').swiper;
+// const swiper = document.querySelector('.swiper').swiper;
+// swiper.slideNext();
 
-// Now you can use all slider methods like
-swiper.slideNext();
+
+
+
+const popup = document.getElementById("popup");
+const openButton = document.getElementById("openPopup");
+const closeButton = document.getElementById("closePopup");
+
+// Open the popup
+openButton.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+// Close the popup
+closeButton.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+// Close the popup if the user clicks outside of it
+window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+});
+
+// Prevent scrolling when the popup is open
+openButton.addEventListener("click", () => {
+    document.body.style.overflow = "hidden";
+});
+
+closeButton.addEventListener("click", () => {
+    document.body.style.overflow = "auto";
+});
+
