@@ -6,10 +6,15 @@ function vanish() {
   loader.classList.add('disppear');
 }
 
-  // gsap.to(smoother, {
-  //   	scrollTop: smoother.offset(".main-slider-div", "center center"),
-  //   	duration: 1
-  //   });
+document.addEventListener('scroll', function(e) {
+  // Prevent horizontal scrolling by resetting scrollLeft to 0
+  window.scrollTo(0, window.scrollY);
+});
+
+  gsap.to(smoother, {
+    	scrollTop: smoother.offset(".main-slider-div", "center center"),
+    	duration: 1
+    });
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".services-row", {

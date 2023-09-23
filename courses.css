@@ -85,6 +85,18 @@ body{
     transition: 0.8s;
     transform: rotate(360deg);
 }
+header::before {
+    content: "";
+    display: block;
+    background-image: url('Assets/background-star.png');
+    background-size: cover; 
+    width: 100%;
+    height: 700px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
 /* Hamburger menu styles for mobile */
 .hamburger {
     display: none;
