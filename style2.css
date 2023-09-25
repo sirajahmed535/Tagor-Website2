@@ -874,6 +874,13 @@ label{
 }
 /*small screens*/
 @media (min-width: 577px) and (max-width: 768px) {
+    .popup-content{
+        height: 60vh !important;
+    }
+    .popup-content > .close{
+        top: 220px !important;
+        right: 230px !important;
+    }
     .navbar1{
         display: flex;
         justify-content: space-between;
