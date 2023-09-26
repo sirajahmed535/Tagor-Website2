@@ -202,3 +202,4 @@ closeButton.addEventListener("click", () => {
     document.body.style.overflow = "auto";
 });
 
+//new 3d section
