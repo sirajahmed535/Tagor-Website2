@@ -827,10 +827,24 @@ label{
     }
 }
 /*For large screens*/
-@media (min-width: 1201px) {
-    /* #del5{
-        left: 72vw;
-    } */
+@media (max-width: 3440px) {
+    .txt-img-class-one{
+        width: 40% !important;
+    }
+    .txt-img-class{
+        width: 72% !important;
+    }
+    #del2 {
+        bottom: 48vw !important;
+        left: 10vw !important;
+      }
+    .txt-img-class-1{
+        width: 34% !important; 
+      }
+    #del5{
+        bottom: 98vw !important;
+        left: 38vw !important;
+      }
 }
 /*For large screens*/
 @media (min-width: 1920px) and (max-width: 3440px){
