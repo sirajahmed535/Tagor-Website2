@@ -830,7 +830,7 @@ label{
     }
 }
 /*For large screens*/
-@media screen and (min-width: 3440px){
+@media screen and (max-width: 3440px){
     .txt-img-class-one{
         width: 40%;
     }
@@ -851,7 +851,7 @@ label{
         left: 38vw;
       } 
 }
-@media screen and (min-width: 1920px){
+@media screen and (max-width: 1920px){
     .txt-img-class-one{
         width: 40%;
     }
@@ -872,10 +872,7 @@ label{
         left: 66vw;
     }
 }
-@media screen and (min-width: 1440px){
-    /* #del1{
-        left: 0vw;
-    } */
+@media screen and (max-width: 1440px){
     #del2 {
         position: relative;
         bottom: 86vw;
@@ -887,7 +884,7 @@ label{
         left: 72vw;
     }
 }
-@media screen and (min-width: 1240px){
+@media screen and (max-width: 1240px){
     #del2 {
         position: relative;
         bottom: 89vw;
@@ -902,7 +899,7 @@ label{
 
 
 /*For medium screens*/
-@media screen and (min-width: 992px){
+@media screen and (max-width: 992px){
     #del2 {
         position: relative;
         bottom: 93vw;
@@ -938,7 +935,7 @@ label{
     }
 }
 /*small screens*/
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     #del2 {
         position: relative;
         bottom: 90vw;
@@ -1019,7 +1016,7 @@ label{
     }
 
 }
-@media screen and (min-width: 568px){
+@media screen and (max-width: 568px){
      .inner-txt-div{
         width: 90%;
      }
@@ -1111,7 +1108,7 @@ label{
 }
 
 
-@media screen and (min-width: 375px){
+@media screen and (max-width: 375px){
     .navbar1{
         display: flex;
         justify-content: space-between;
