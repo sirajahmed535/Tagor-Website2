@@ -202,4 +202,17 @@ closeButton.addEventListener("click", () => {
     document.body.style.overflow = "auto";
 });
 
-//new 3d section
+//funnel section
+// const containerr = document.querySelector(".funnel-class");
+
+//     window.addEventListener("scroll", function () {
+//         const scrollPosition = window.scrollY;
+//         const containerrOffset = containerr.offsetTop;
+//         const windowHeight = window.innerHeight;
+
+//         if (scrollPosition >= containerrOffset - windowHeight / 2) {
+//             containerr.style.opacity = 1;
+//         } else {
+//             containerr.style.opacity = 0;
+//         }
+//     });
