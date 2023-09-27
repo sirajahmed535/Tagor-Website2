@@ -593,7 +593,12 @@ to {
 .funnel-class{
     text-align: center;
 }
-
+.iconnss{
+    transition: transform 0.5s ease-out;
+}
+.iconnss:hover{
+    transform: rotate(360deg);
+}
   .dashboard_video{
     border: 14px solid #FBC108;
     border-radius: 20px;
