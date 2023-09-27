@@ -210,21 +210,8 @@ closeButton.addEventListener("click", () => {
 });
 
 //funnel section
-// $(document).ready(function(){
-//   $(window).scroll(function(){
-//     if($(this).scrollTop() > 50){
-//       $('.funnel-class').css({"opacity":"0"})
-//     }
-//     else{
-//       $('.funnel-class').css({"opacity":"1"})
-//     }
-//   })
-// })
+gsap.to(".funnel-class", 5, {
+  scrollTrigger: ".funnel-class", // start the animation when ".box" enters the viewport (once)
+  opacity: 1,
 
-
-// let funnell = document.getElementsByClassName('.funnel-class');
-// funnell.addEventListener('scroll', funnelfunc());
-
-// function funnelfunc(){
-//   funnell.style.display = 
-// }
+});
