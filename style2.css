@@ -593,7 +593,23 @@ to {
 .funnel-class{
     text-align: center;
 }
+.time-delation{
+    position: relative; 
+}
+.time-delation::before {
+    content: "";
+    display: block;
+    background-image: url('Assets/back-iconss.png');
+    background-size: cover; 
+    width: 100%;
+    height: 700px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
 .iconnss{
+    /* width: 50%; */
     transition: transform 0.5s ease-out;
 }
 .iconnss:hover{
