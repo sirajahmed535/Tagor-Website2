@@ -590,12 +590,10 @@ to {
     bottom: 170vw;
     left: 66vw;
   }
-
-  
-  .funnel-class{
+.funnel-class{
     text-align: center;
-    /* opacity: 0; */
-  }
+}
+
   .dashboard_video{
     border: 14px solid #FBC108;
     border-radius: 20px;
@@ -938,6 +936,8 @@ label{
     .navbar1{
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 5;
     }
     .line-11, .line-22{
         display: none;
@@ -954,6 +954,18 @@ label{
 
     .nav-links.active {
         display: flex;
+            border: none;
+            border-radius: 0px;
+            background-image: linear-gradient(to top, #330C40, #000000);
+            position: absolute;
+            top: 0rem;
+            height: 110vh;
+            text-align: center;
+            padding: 6rem;
+            z-index: -1;
+    }
+    .nav-links li {
+        padding: 0.8rem 0.7rem;
     }
 
     .hamburger {
@@ -1006,6 +1018,8 @@ label{
      .navbar1{
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 5;
     }
     .line-11, .line-22{
         display: none;
@@ -1022,6 +1036,18 @@ label{
 
     .nav-links.active {
         display: flex;
+            border: none;
+            border-radius: 0px;
+            background-image: linear-gradient(to top, #330C40, #000000);
+            position: absolute;
+            top: 0rem;
+            height: 110vh;
+            text-align: center;
+            padding: 6rem;
+            z-index: -1;
+    }
+    .nav-links li {
+        padding: 0.8rem 0.7rem;
     }
 
     .hamburger {
@@ -1095,6 +1121,8 @@ label{
     .navbar1{
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 5;
     }
     .line-11, .line-22{
         display: none;
@@ -1111,6 +1139,18 @@ label{
 
     .nav-links.active {
         display: flex;
+            border: none;
+            border-radius: 0px;
+            background-image: linear-gradient(to top, #330C40, #000000);
+            position: absolute;
+            top: 0rem;
+            height: 110vh;
+            text-align: center;
+            padding: 6rem;
+            z-index: -1;
+    }
+    .nav-links li {
+        padding: 0.8rem 0.7rem;
     }
 
     .hamburger {

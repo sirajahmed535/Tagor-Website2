@@ -15,6 +15,13 @@ function showPopup() {
 function closePopup() {
   document.getElementById("popup-container").style.display = "none";
 }
+//navbar
+const menuToggle = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
 // Show the popup when the page loads
 window.onload = showPopup;
@@ -203,16 +210,21 @@ closeButton.addEventListener("click", () => {
 });
 
 //funnel section
-// const containerr = document.querySelector(".funnel-class");
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//     if($(this).scrollTop() > 50){
+//       $('.funnel-class').css({"opacity":"0"})
+//     }
+//     else{
+//       $('.funnel-class').css({"opacity":"1"})
+//     }
+//   })
+// })
 
-//     window.addEventListener("scroll", function () {
-//         const scrollPosition = window.scrollY;
-//         const containerrOffset = containerr.offsetTop;
-//         const windowHeight = window.innerHeight;
 
-//         if (scrollPosition >= containerrOffset - windowHeight / 2) {
-//             containerr.style.opacity = 1;
-//         } else {
-//             containerr.style.opacity = 0;
-//         }
-//     });
+// let funnell = document.getElementsByClassName('.funnel-class');
+// funnell.addEventListener('scroll', funnelfunc());
+
+// function funnelfunc(){
+//   funnell.style.display = 
+// }
